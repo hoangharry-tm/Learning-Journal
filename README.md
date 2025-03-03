@@ -222,9 +222,9 @@ the book to learn from
 
 <!--End-->
 
-[_🚀 Back to top_](#top)
+🚀 [_Back to top_](#top)
 
-## Resouces
+## Resources
 
 ### Books
 
