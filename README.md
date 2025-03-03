@@ -6,7 +6,8 @@ _Here is the guide to my journal: [Quantitative Finance/Algorithmic Trading](./a
 
 ## Table of content
 
-1. Roadmap [🔗](#roadmap)
+- [Roadmap](#roadmap)
+  - [Phase 1: _Trading Fundamentals_](#phase-1-trading-fundamentals)
 
 ## Roadmap
 
@@ -200,7 +201,7 @@ The overall structure of the roadmap:
 
 | Phases |                        Details                         |
 | :----: | :----------------------------------------------------: |
-| __1__  | Trading Fundametals [⤵️](#phase-1-trading-fundamentals) |
+| __1__  | Trading Fundametals [⤵](#phase-1-trading-fundamentals) |
 | __2__  |                   Learn Programming                    |
 | __3__  |               Build Data Infrastructure                |
 | __4__  |         Data Processing & Feature Engineering          |
@@ -208,4 +209,4 @@ The overall structure of the roadmap:
 | __6__  |                      Backtesting                       |
 | __7__  |           Trade Execution & Risk Management            |
 
-### Phase 1: Trading Fundamentals
+### Phase 1: _Trading Fundamentals_
