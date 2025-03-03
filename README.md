@@ -1,5 +1,7 @@
 # 🧸 My Learning Journal
 
+<a name="top"></a>
+
 _Welcome to my __journal__! Here, I'm writing my daily progress on how I studied to success._
 _My current concentration (as of March 2, 2025) is learning quantitative finance or algorithmic trading._
 _Here is the guide to my journal: [Quantitative Finance/Algorithmic Trading](./algo-trading/algo-trading.md)_
@@ -8,6 +10,7 @@ _Here is the guide to my journal: [Quantitative Finance/Algorithmic Trading](./a
 
 - [Roadmap](#roadmap)
   - [Phase 1: _Trading Fundamentals_](#phase-1-trading-fundamentals)
+- [Resources](#resources)
 
 ## Roadmap
 
@@ -210,3 +213,30 @@ The overall structure of the roadmap:
 | __7__  |           Trade Execution & Risk Management            |
 
 ### Phase 1: _Trading Fundamentals_
+
+<!--Block: Write detailed instructions here ↓-->
+In this particular stage, I will learn the foundation of the financial market.
+This includes learning about stocks, forex, crypto, bonds, options, etc. Here is
+the book to learn from
+[How the Stock Market Works : A Beginner's Guide to Investment][Book 1]
+
+<!--End-->
+
+[_🚀 Back to top_](#top)
+
+## Resouces
+
+### Books
+
+Consider the list of following ebooks providers which cooperate with Queen's
+University:
+
+- ProQuest
+- Cengage
+- Wiley Online Library
+- O'Reilly Media
+
+<!--Variables-->
+
+<!--How the Stock Market Works : A Beginner's Guide to Investment-->
+[Book 1]: https://ocul-qu.primo.exlibrisgroup.com/view/action/uresolver.do?operation=resolveService&package_service_id=16351423430005158&institutionId=5158&customerId=5150&VE=true
