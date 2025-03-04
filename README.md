@@ -214,13 +214,16 @@ The overall structure of the roadmap:
 
 ### Phase 1: _Trading Fundamentals_
 
-<!--Block: Write detailed instructions here ↓-->
+#### Study the market structure
+
 In this particular stage, I will learn the foundation of the financial market.
 This includes learning about stocks, forex, crypto, bonds, options, etc. Here is
 the book to learn from
 [How the Stock Market Works : A Beginner's Guide to Investment][Book 1]
 
-<!--End-->
+#### Learn Market Data & Order Types
+
+What is market
 
 🚀 [_Back to top_](#top)
 
