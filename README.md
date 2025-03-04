@@ -204,7 +204,7 @@ The overall structure of the roadmap:
 | __6__  |                      Backtesting                       |
 | __7__  |           Trade Execution & Risk Management            |
 
-### Phase 1: _Trading Fundamentals_
+### <ins>Phase 1: _Trading Fundamentals_</ins>
 
 #### Study the market structure
 
@@ -283,7 +283,7 @@ as well as some well-constructed portfolio to be executed.
 
 🚀 [_Back to top_](#top)
 
-### Phase 2: _Learn Programming_
+### <ins>Phase 2: _Learn Programming_</ins>
 
 ## Resources
 
