@@ -223,7 +223,71 @@ the book to learn from
 
 #### Learn Market Data & Order Types
 
-What is market
+_Q_: What is market data?
+
+_A_: Market data consists of
+
+- Level 1 Data: Price, Volume, Bid-Ask Spread
+- Level 2 Data (Order Book): Shows buy/sell orders @ different price levels
+- And many more!
+
+__Resources__: Learn how to put orders from a specific brokerage (_Interactive Brokers_,
+_Quest Trade_, _Binance_, etc.)
+
+#### Learn Trading Strategies
+
+In this particular step, I will try to learn different quantitative speculation
+strategies as well as how to leverage information from the movement of the market
+to predict patterns.
+
+__Resources__: 📚 _"Algorithmic Trading"_ by Ernest Chen
+
+#### Understand Risk Management
+
+Why is risk management important?
+
+- Avoids blowing up your account from large losses.
+- Keeps drawdowns small and manageable.
+- Helps maximize long-term profitability.
+  
+1️⃣ Position Sizing
+
+- Use 1-2% risk per trade to limit losses.
+- Adjust position size based on account balance.
+
+2️⃣ Stop-Loss & Take-Profit
+
+- Place stop-losses based on technical indicators (e.g., ATR).
+- Take profits at predetermined risk-reward ratios.
+
+3️⃣ Leverage & Margin
+
+- Leverage = Borrowing money to increase trade size.
+- Too much leverage = High risk of liquidation.
+- Safe leverage: 1:2 for stocks, 1:10 for forex, 1:5 for crypto.
+
+#### Learn How To Read Financial Data
+
+These are some notable data that needed to be learned:
+
+- Candle Stick Charts
+- Volume Analysis
+- Order Book Analysis
+
+__Resources__: 📖 _"Technical Analysis of the Financial Markets"_ by John Murphy
+
+#### Paper Trading
+
+Applying the knowledge learned to real-world scenario!
+I expect to have a trading account set up, some analysis of the prefered market
+as well as some well-constructed portfolio to be executed.
+
+#### 🪴 _Action Plan of Phase 1_
+
+- Week 1: Learn market structure, order types, and market data.
+- Week 2: Study common algo trading strategies & risk management.
+- Week 3: Learn technical & order book analysis.
+- Week 4: Open a paper trading account & place simulated trades.
 
 🚀 [_Back to top_](#top)
 
