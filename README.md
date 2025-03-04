@@ -15,14 +15,6 @@ _Here is the guide to my journal: [Quantitative Finance/Algorithmic Trading](./a
 ## Roadmap
 
 <!-- ChatGPT Roadmap
-# **📍 Full Roadmap: Algorithmic Trading with Clojure & Python**
-### *(Low Latency, Machine Learning, and Scalable Data Engineering)*  
-
-## **Phase 1: Learn Trading Fundamentals (2-4 weeks)**
-📚 **Same as before** – Understand market structures, order types, strategies, and risk management.  
-
----
-
 ## **Phase 2: Learn Clojure & Python for Trading (3-6 weeks)**  
 💡 **Why Clojure?**  
 - **Immutable, functional programming** → Great for handling financial data streams.  
@@ -205,7 +197,7 @@ The overall structure of the roadmap:
 | Phases |                        Details                         |
 | :----: | :----------------------------------------------------: |
 | __1__  | Trading Fundametals [⤵](#phase-1-trading-fundamentals) |
-| __2__  |                   Learn Programming                    |
+| __2__  |   Learn Programming [⤵](#phase-2-learn-programming)    |
 | __3__  |               Build Data Infrastructure                |
 | __4__  |         Data Processing & Feature Engineering          |
 | __5__  |                    Machine Learning                    |
@@ -290,6 +282,8 @@ as well as some well-constructed portfolio to be executed.
 - Week 4: Open a paper trading account & place simulated trades.
 
 🚀 [_Back to top_](#top)
+
+### Phase 2: _Learn Programming_
 
 ## Resources
 
