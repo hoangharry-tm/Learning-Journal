@@ -289,16 +289,98 @@ as well as some well-constructed portfolio to be executed.
 Since in this project, I specifically want to use _Clojure_ and _Python_, this
 phase is the opportunity for me to learn both.
 
-#### 🪴 Week 1: _The Clojure Programming Language & Functional Programming_
+<details>
 
-Learn the basics:
+<summary>🪴 Week 1: <i>Clojure & Python for Algorithmic Trading</i></summary>
+
+<br/>
+
+→ Learn the basics of Clojure:
 
 - Learn Clojure syntax. REPL, immutability, and functional programming.
 - Write simple scripts to process numbers, strings, and collections.
 
 Resources?
 
-- 📚 "Clojure for the Brave and True" – Daniel Higginbotham [_Online_][Clojure Book 1]
+- 📚 "Clojure for the Brave and True" – Daniel Higginbotham [(_Online_)][Clojure Book 1]
+
+Some hands-on 🫨:
+
+- [ ] Install Clojure CLI & Leiningen.
+- [ ] Run simple __map, filter, and reduce__ functions
+
+→ Then, try to learn Python basics for Data Science & Machine Learning!
+
+- Learn NumPy, Pandas, and Matplotlib for market data analysis.
+- Write basic data processing scripts for stock price visualization.
+
+Some resouces for to check out:
+
+- 📖 "Python for Data Analysis" – Wes McKinney
+
+And, again, some hands-on:
+
+- [ ] Load _historical market_ data using `pandas` and visualize price trends.
+
+→ Ultimately, let's learn more about Clojure & Python interoperability.
+
+- Use libpython-clj to run Python code from Clojure.
+- Call machine learning models from Python in Clojure pipelines.
+
+Why not try...
+
+- [ ] Writing a Clojure script that call a Python function for a simple calculation?
+
+</details>
+
+<details>
+
+<summary>🌱 Market data handling & storage</summary>
+
+<br/>
+
+→ Market data sources & API's
+
+- Learn about Interactive Brokers (IBKR) API, Alpha Vantage, Binance, Yahoo Finance.
+- Fetch real-time & historical price data.
+
+A book suggestion,
+
+- 📖 "Mastering Python for Finance" – James Ma Weiming
+
+Checkpoint:
+
+- [ ] Write a script to __pull stock data__ from the IBKR API
+
+→ Databases for Algo Trading
+
+- Use PostgreSQL for storing price data and trade logs.
+- Use Redis for real-time caching.
+
+📚 Resources:
+
+- 🎥 📺 PostgreSQL for Trading (Youtube)
+- 📖 "Designing Data-Intensive Applications" – Martin Kleppmann
+
+Hands-on:
+
+- [ ] Set up a PostgreSQL database and store historical price data.
+
+→ Data Pipelines & ETL
+
+- Build a Clojure-based data pipeline to clean and process market data.
+- Use Apache Kafka for streaming live market data.
+
+📚 Resources:
+
+- 🎥 📺 Kafka for Real-Time Trading
+- 📖 "Kafka: The Definitive Guide" – Neha Narkhede
+
+Hands-on:
+
+- [ ] Stream live Binance data into PostgreSQL using Kafka.
+
+</details>
 
 ## Resources
 
