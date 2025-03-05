@@ -10,6 +10,7 @@ _Here is the guide to my journal: [Quantitative Finance/Algorithmic Trading](./a
 
 - [Roadmap](#roadmap)
   - [Phase 1: _Trading Fundamentals_](#phase-1-trading-fundamentals)
+  - [Phase 2: _Learn Programming_](#phase-2-learn-programming)
 - [Resources](#resources)
 
 ## Roadmap
@@ -285,6 +286,20 @@ as well as some well-constructed portfolio to be executed.
 
 ### <ins>Phase 2: _Learn Programming_</ins>
 
+Since in this project, I specifically want to use _Clojure_ and _Python_, this
+phase is the opportunity for me to learn both.
+
+#### 🪴 Week 1: _The Clojure Programming Language & Functional Programming_
+
+Learn the basics:
+
+- Learn Clojure syntax. REPL, immutability, and functional programming.
+- Write simple scripts to process numbers, strings, and collections.
+
+Resources?
+
+- 📚 "Clojure for the Brave and True" – Daniel Higginbotham [_Online_][Clojure Book 1]
+
 ## Resources
 
 ### Books
@@ -301,3 +316,6 @@ University:
 
 <!--How the Stock Market Works : A Beginner's Guide to Investment-->
 [Book 1]: https://ocul-qu.primo.exlibrisgroup.com/view/action/uresolver.do?operation=resolveService&package_service_id=16351423430005158&institutionId=5158&customerId=5150&VE=true
+
+<!--"Clojure for the Brave and True" – Daniel Higginbotham-->
+[Clojure Book 1]: https://www.braveclojure.com/
