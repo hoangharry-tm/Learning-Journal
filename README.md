@@ -335,7 +335,7 @@ Why not try...
 
 <details>
 
-<summary>🌱 Market data handling & storage</summary>
+<summary>🌱 Week 2: <i>Market data handling & storage</i></summary>
 
 <br/>
 
