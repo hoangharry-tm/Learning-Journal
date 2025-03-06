@@ -6,13 +6,6 @@ _Welcome to my __journal__! Here, I'm writing my daily progress on how I studied
 _My current concentration (as of March 2, 2025) is learning quantitative finance or algorithmic trading._
 _Here is the guide to my journal: [Quantitative Finance/Algorithmic Trading](./algo-trading/algo-trading.md)_
 
-## Table of content
-
-- [Roadmap](#roadmap)
-  - [Phase 1: _Trading Fundamentals_](#phase-1-trading-fundamentals)
-  - [Phase 2: _Learn Programming_](#phase-2-learn-programming)
-- [Resources](#resources)
-
 ## Roadmap
 
 The overall structure of the roadmap:
