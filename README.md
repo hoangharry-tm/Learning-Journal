@@ -206,7 +206,7 @@ The overall structure of the roadmap:
 | __7__  |           Trade Execution & Risk Management            |
 
 <details>
-<summary><h3><ins>Phase 1: _Trading Fundamentals_</ins></h3></summary>
+<summary><h3><ins>Phase 1: <i>Trading Fundamentals</i></ins></h3></summary>
 
 #### Study the market structure
 
@@ -288,7 +288,7 @@ as well as some well-constructed portfolio to be executed.
 </details>
 
 <details>
-<summary><h3><ins>Phase 2: _Learn Programming_</ins></h3></summary>
+<summary><h3><ins>Phase 2: <i>Learn Programming</i></ins></h3></summary>
 
 Since in this project, I specifically want to use _Clojure_ and _Python_, this
 phase is the opportunity for me to learn both.
