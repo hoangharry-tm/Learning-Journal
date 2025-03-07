@@ -14,4 +14,4 @@ Table of content:
 
 Here are the summaries and notes on some books/videos about Finance that I learned from
 
-- [🌷 How the Stock Market Works : A Beginner's Guide to Investment](./phase-1-finance/book%201.md)
+- 🌷 [How the Stock Market Works : A Beginner's Guide to Investment](./phase-1-finance/book%201.md)
