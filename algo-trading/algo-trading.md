@@ -3,9 +3,9 @@
 
 Well... Good to see you here! If you're reading this, it means that you are
 ready for a new adventure. This file serves as a documentary, or a librarian connecting
-different files together.
+different files.
 
-Table of content:
+Table of contents:
 
 - [💷 Quantitative Finance/Algorithmic Trading](#-quantitative-financealgorithmic-trading)
   - [📌 Phase 1: _Understanding the Basics of Trading \& Finance_](#-phase-1-understanding-the-basics-of-trading--finance)
@@ -14,4 +14,4 @@ Table of content:
 
 Here are the summaries and notes on some books/videos about Finance that I learned from
 
-- 🌷 [How the Stock Market Works : A Beginner's Guide to Investment](./phase-1-finance/book%201.md)
+- 🌷 [How the Stock Market Works: A Beginner's Guide to Investment](./phase-1-finance/book%201.md)
