@@ -7,8 +7,8 @@ different files.
 
 Table of contents:
 
-- [💷 Quantitative Finance/Algorithmic Trading](#-quantitative-financealgorithmic-trading)
-  - [📌 Phase 1: _Understanding the Basics of Trading \& Finance_](#-phase-1-understanding-the-basics-of-trading--finance)
+- 💷 [Quantitative Finance/Algorithmic Trading](#-quantitative-financealgorithmic-trading)
+  - 📌 [Phase 1: _Understanding the Basics of Trading \& Finance_](#-phase-1-understanding-the-basics-of-trading--finance)
 
 ## 📌 Phase 1: _Understanding the Basics of Trading & Finance_
 
