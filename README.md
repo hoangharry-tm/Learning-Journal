@@ -212,6 +212,6 @@ University:
 
 <!--Variables-->
 
-<!--How the Stock Market Works : A Beginner's Guide to Investment-->
+<!--How the Stock Market Works: A Beginner's Guide to Investment-->
 
 <!--"Clojure for the Brave and True" – Daniel Higginbotham-->
