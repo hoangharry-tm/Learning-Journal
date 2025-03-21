@@ -43,7 +43,7 @@ date when the issuer will buy the paper back.
 
 ### Loan stocks and debentures
 
-- Bonds  that  have  no  specified  asset  to  act  as  security  are  called  ‘loan  
+- Bonds  that  have  no  specified  asset  to  act  as  security  are  called  ‘loan
   stocks’ or ‘notes’.
 - Dividends are on these bonds come regularly, irrespectuve of the state of the
   company's fortunes.
@@ -51,7 +51,54 @@ date when the issuer will buy the paper back.
   vice versa.
 - In other words, the investment return from buying bonds at any particular moment
   is governed more by the prevailing interest rates than by the state of the business
-  issuing them. <!--End of page 8, start page 9-->
+  issuing them. 
+- If the issuer defaults on the guaranteed interest payments - which is genereally
+  only when the business is in serious danger of collapse - debenture holders can
+  appoint their own receiver to realize the assets that act as their security and so
+  repay them the capital. Unsecured loan stock holders have no such option _but_ still
+  rank ahead of shareholders for the remnants when the compnay goes __burst__.
+  
+### Warrants
+
+- Provide the right to buy ordinary shares at a predetermined price, known as the
+  'exercise' or 'strike' price.
+- The price of the warrents = the market price of the share - the strike price
+- For instance, if the share stands at 100p and the cost of converting the warrants
+  into ordinary shares has been set at 80p, the sensible price for the warrants
+  would be 20p. If the share price now rises to 200p, the right price for the
+  warrant would be 120p (deducting the cost of 80p for converting to share). As
+  the result, when the share price doubled the warrant price jumped six-fold.
+
+### Preference shares
+
+- Can be considered a sort of _hybrid_
+- They give holders similar rights as ordinary shares (equities), but do not have
+  a vote at meetings; like bonds they get specified payments at predetermined dates.
+- Holders are entitled to a dividend regardless of the company profit (gain/loss).
+- __NO__ dividend is allowed to be paid on ordinary shared until the preference
+  holders have had theirs.
+- Have conversion rights attached, which means they can be changed into ordinary
+  shares
+  
+### Convertibles
+  
+- Some _Preference shares_ [⇲](#preference-shares) and some _corporate bonds_
+  [⇲](#bonds) are convertible, which essentially means there exists a _fixed date_
+  when they can be transformed into ordinary shares.
+- Being bonds or preference shares with an __embedded__ call option, the value is
+  a mixture of the share price and hence the cost of conversion, and the income
+  they generate.
+  
+### Gilts (Trái phiếu chính phủ)
+
+- Although gilts are a form of _loan stock_ not specifically backed by any asset,
+  the country as a whole is assumed to stand behind the issue and therefore default
+  on future gilt is pretty unlikely as well - the risk is reckoned to be effectively
+  zero.
+- The issues have a fixed rate of interest (called "coupon") and a stated redemption 
+  date when the Treasury will buy back the paper.
+- The _coupon_ is determined by both the prevailing interest rates at the time and
+  who the specific issue is aimed at.
 
 🚀 [Back to top](#top)
-<!--End-Block: Chapter 2-->
+  <!--End-Block: Chapter 2-->
