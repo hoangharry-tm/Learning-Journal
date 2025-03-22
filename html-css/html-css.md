@@ -1,9 +1,12 @@
+<a id="top"></a>
+
 # 👨🏻‍🎨 HTML/CSS 
 
 _Table of Contents:_
 
 - [✍🏻 Topic 1: CSS Text](#-topic-1--css-text)
   - [Text Styling](#text-styling)
+  - [Text Spacing](#text-spacing)
 
 ## ✍🏻 Topic 1: CSS Text
 
@@ -44,6 +47,8 @@ family, color, and size.
   
 For summary card, check out the following asset, page 6 [⇲](./assets/CSS Summary Cards.pdf)
 
+🚀 [Back to top](#top)
+
 ### Text Spacing
 
 - _Text Align:_ specifies the horizontal alignment of text within an element.
@@ -51,7 +56,45 @@ For summary card, check out the following asset, page 6 [⇲](./assets/CSS Summa
   But note that, only <ins>block</ins> text can move around, because it takes all
   the horizontal space of the screen. You can take a look at this picture
   ![Block-vs-Inline-Text](./assets/Block-vs-Inline-Text-Spacing.png)
-- 
+  _Text align guidance:_ Don't justify text, long block of text should be left-
+  aligned and do not center large blocks of text.
+- _Line height:_ sets the height of text and is commonly used to set distance
+  between multiple lines of text. The signature is as follows:
+  ```css
+  // There are several types of values: unitless, percentage, pixels, ems
+  line-height: 1.5; 
+  ```
+  Headings should be `< 1.5` and regular text should be `1.5-2` to improve 
+  readability.
+- _Letter spacing:_ sets the horizontal space between characters. The signature
+  is
+  ```css
+  // There are 3 main units that can be used: pixels (most common), percentage, and ems.
+  letter-spacing: 8px;
+  ```
+  We __often__ apply a small negative px value to headings to improve readability,
+  which is commonly called _tightening_.
+
+Summary card for this section can be found on page 7 [⇲](./assets/CSS Summary Cards.pdf)
+
+🚀 [Back to top](#top)
+
+### Text Size
+
+- _Font Size:_ sets the font size of the text. The values can be set to be either
+  __static__ or __relative__. Let's first know the signature of the property:
+  ```css
+  font-size: 16px; // Static value.
+  ```
+  - __Absolute units:__ size is fixed and does not change in relation to parent
+    elements. The units to be used are flexible:
+    - px (most commonly used)
+    - pt, in, cm, mm
+  - __Relative units:__ size is based on the size of the parent element and adjusts
+    proportionally to changes in the parent elements. Some units for the values are:
+    - %, em, rem, vh, vw
+  __Font Size Guidance:__ It is recommended that regular text should be `16px-32px`
+  and headings can be `>60px`.
 
 ## Resources
 
