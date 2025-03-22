@@ -4,10 +4,11 @@
 
 🍍 __Table of Contents__:
 
-| Chapters |              It's about...               |
-| :------: | :--------------------------------------: |
-|    1     | _What and why are shares?_ [⤵](#Chap-1)  |
-|    2     | _What are bonds and gilts?_ [⤵](#Chap-2) |
+| Chapters | It's about...                                       |
+|:--------:|:---------------------------------------------------:|
+| 1        | _What and why are shares?_ [⤵](#Chap-1)             |
+| 2        | _What are bonds and gilts?_ [⤵](#Chap-2)            |
+| 3        | _The complicated world of derivatives_ [⤵](#Chap-3) |
 
 <!--Block: Chapter 1-->
 <h2 id="Chap-1">🐣 Chapter 1: <i>What and why are shares?</i></h2>
@@ -101,4 +102,10 @@ date when the issuer will buy the paper back.
   who the specific issue is aimed at.
 
 🚀 [Back to top](#top)
-  <!--End-Block: Chapter 2-->
+<!--End-Block: Chapter 2-->
+
+<!--Block: Chapter 3-->
+<h2 id="Chap-3">🧙🏻‍♂️ Chapter 2: <i>The complicated world of derivatives</i></h2>
+
+🚀 [Back to top](#top)
+<!--End-Block: Chapter 2-->
