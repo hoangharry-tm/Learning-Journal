@@ -4,7 +4,7 @@
 
 _Table of Contents:_
 
-- [✍🏻 Topic 1: CSS Text](#-topic-1--css-text)
+- [✍🏻 Topic 1: CSS Text](#-topic-1-css-text)
   - [Text Styling](#text-styling)
   - [Text Spacing](#text-spacing)
 
@@ -45,7 +45,7 @@ family, color, and size.
   - `square`
   - `decimal`: This is the default for order list.
   
-For summary card, check out the following asset, page 6 [⇲](./assets/CSS Summary Cards.pdf)
+For summary card, check out the following asset, page 6 [⇲](<./assets/CSS Summary Cards.pdf>)
 
 🚀 [Back to top](#top)
 
@@ -75,7 +75,7 @@ For summary card, check out the following asset, page 6 [⇲](./assets/CSS Summa
   We __often__ apply a small negative px value to headings to improve readability,
   which is commonly called _tightening_.
 
-Summary card for this section can be found on page 7 [⇲](./assets/CSS Summary Cards.pdf)
+Summary card for this section can be found on page 7 [⇲](<./assets/CSS Summary Cards.pdf>)
 
 🚀 [Back to top](#top)
 
@@ -93,6 +93,7 @@ Summary card for this section can be found on page 7 [⇲](./assets/CSS Summary 
   - __Relative units:__ size is based on the size of the parent element and adjusts
     proportionally to changes in the parent elements. Some units for the values are:
     - %, em, rem, vh, vw
+
   __Font Size Guidance:__ It is recommended that regular text should be `16px-32px`
   and headings can be `>60px`.
 
