@@ -7,6 +7,9 @@ _Table of Contents:_
 - [✍🏻 Topic 1: CSS Text](#-topic-1-css-text)
   - [Text Styling](#text-styling)
   - [Text Spacing](#text-spacing)
+  - [Text Size](#text-size)
+  - [Font Family](#font-family)
+  - [Text Color](#text-color)
 
 ## ✍🏻 Topic 1: CSS Text
 
@@ -95,7 +98,129 @@ Summary card for this section can be found on page 7 [⇲](<./assets/CSS Summary
     - %, em, rem, vh, vw
 
   __Font Size Guidance:__ It is recommended that regular text should be `16px-32px`
-  and headings can be `>60px`.
+  and headings can be `>60px`. We can use a type-scale [⇲](typescale.com)
+  which provides a structured hierachy of font sizes to create visual consistency
+  and limits choices.
+
+Summary card for this section can be found on page 7 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### Font Family
+
+- _Typeface:_ There are 5 types - serif, sans-serif, monospace, cursive, and display.
+  - Serif: A classic feel used by brands to communicate __luxury__ and __reliability__.
+    They are mostly used by _high-end companies_.
+  - Sans-serif: A modern and clean feel used by brands to communicate __simplicity__
+    and __clarity__. Thus, they are used by many _tech companies_.
+  - Monospace: A technical feel used by brands to communicate __accuracy__ and
+    __precision__. Usually, they are used for very technical products.
+  - Cursive: A personal feel used to connect with people on a more emotional level.
+    Some web pages related to weddings or blogs often use cursive.
+- _Font Family:_ sets a prioritized list of font names (typeface) or font categories.
+  ```css
+  //            1st choice
+  font-family: 'Tahoma', sans-serif;
+  //                     Fall-back
+  ```
+  Consider the above piece of code, the way it works is that fonts will only display
+  if they are installed on local machines.
+  
+  __Font guidance:__ Select 1 or 2 fonts, no more.
+  
+  _Google Fonts_ are available online and do not rely on the fonts installed on
+  an individual user's device.
+
+Summary card for this section can be found on page 8 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### Text Color
+
+- _CSS Color:_ specifies the color of text. Its signature is as follows
+  ```css
+  color: #9874F9;
+  ```
+  
+  The value for the `color` property can have different units:
+  - hex (most commonly used)
+  - rgb, rgba, hsl
+  
+  __Color Guidance:__ Have at least 2 colors in your color palette, a primary and
+  grey color.
+  ![Text-Color-Guidance](./assets/Text-Color-Guidance.png)
+  Primary colors are used to highlight important parts of a page (e.g. buttons). 
+  Tints and shades can be used to create contrast, which are often used for fonts.
+  
+  A great place to explore colors and choose you palette is [tailwind colors](https://tailwindcss.com/docs/colors).
+  
+Summary card for this section can be found on page 8 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### Documentation Example
+
+```css
+/// Documentation on properties used in project.
+/// 
+/// +----------------------/ Typography /----------------------+
+/// | 
+/// | FONT SIZES:
+/// | 12px / 16px / 20px / 24px / 32 px / 40px / 48px / 60px
+/// | 
+/// | FONT WEIGHTS:
+/// | 400 / 700
+/// | 
+/// | LINE HEIGHT
+/// | 1.2 / 1.5
+/// | 
+/// | LETTER SPACING
+/// | 0 / -2px
+/// | 
+/// | FONT FAMILY
+/// | Poppins
+/// |
+/// +----------------------------------------------------------+
+/// 
+/// +----------/ COLORS /----------+
+/// | 
+/// | PRIMARY
+/// | Base: #339af0 (Sky Blue)
+/// | Tint: #d0ebff (Arctic)
+/// | Shade: #1c7ed6 (Deep Sea)
+/// | 
+/// | SECONDARY
+/// | Base: #9775fa (Lavendar)
+/// | Tint: #e5dbff (Moonligh Iris)
+/// | Shade: #7048e8 (Velvet Night)
+/// | 
+/// | TERTIARY
+/// | Base: #ff922b (Pumpkin)
+/// | Tint: #ffe8cc (Dawn)
+/// | Shade: #f76707 (Lava)
+/// | 
+/// | GREY
+/// | Base: #495057 (Slate)
+/// | Tint: #f1f3f5 (Pebble)
+/// | Shade: #212529 (Graphite)
+/// | White: #ffffff (White)
+/// | Black: #000000 (Black)
+/// | 
+/// +------------------------------+
+///
+/// +---------- BORDER RADIUS ----------+
+/// | 
+/// | 4px / 8px / 20px
+/// | 
+/// +-----------------------------------+
+/// 
+/// +----------------------------- SPACING SYSTEM -----------------------------+
+/// | 
+/// | 5px / 10px / 15px / 20px / 25px / 30px / 40px / 50px / 60px / 70px / 80px /
+/// | 90px / 100px / 125px / 150px / 200px / 250px / 300px / 400px / 500px
+/// | 
+/// +--------------------------------------------------------------------------+
+```
 
 ## Resources
 
