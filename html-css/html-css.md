@@ -10,6 +10,16 @@ _Table of Contents:_
   - [Text Size](#text-size)
   - [Font Family](#font-family)
   - [Text Color](#text-color)
+  - [Documentation Example](#documentation-example)
+- [🪴 Topic 2: CSS Selectors](#-topic-2-css-selectors) 
+  - [The Type Selectors & The Cascade](#the-type-selectors-the-cascade)
+  - [Grouping Selectors](#grouping-selectors)
+  - [ID & Class Selectors](#id-class-selectors)
+  - [Pseudo-class Selectors](#pseudo-class-selectors)
+  - [Combinator Selectors](#combinator-selectors)
+  - [Specificity](#specificity)
+  - [Inheritance](#inheritance)
+  - [Pseudo-elements Selectors](#pseudo-elements-selectors)
 
 ## ✍🏻 Topic 1: CSS Text
 
@@ -221,6 +231,233 @@ Summary card for this section can be found on page 8 [⇲](<./assets/CSS Summary
 /// | 
 /// +--------------------------------------------------------------------------+
 ```
+
+## 🪴 Topic 2: CSS Selectors
+
+### The Type Selectors & The Cascade
+
+- _Type Selector:_ selects elements based on their tag name. For example,
+  ```css
+  h1 {
+    font-size: 20px;
+    color: orange;
+  }
+  ```
+  __Type Selector Guidance:__ It is useful for setting global styles to ensure
+  consistency.
+- _The Cascade:_ styles declared later will take priority. For example,
+  ```css
+  h1 {
+    color: blue;
+  }
+  h1 {
+    color: green; // This is declared later, so this will take effect.
+  }
+  ```
+  
+Summary card for this section can be found on page 10 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### Grouping Selectors
+
+- Selectors can be comma separated to apply shared styles.
+  ```css
+  h1 {
+    color: blue;
+  }
+  h2 {
+    color: blue;
+  }
+  // The above piece of code can be combined into
+  h1, h2 {
+    color: blue;
+  }
+  ```
+- _Grouping selectos and cascading_
+  ```css
+  h1 {
+    font-size: 62px;
+    color: #495057;
+  }
+  h2 {
+    font-size: 48px;
+    color: #495057;
+  }
+  
+  // Since the color property is the same, we can use CSS cascade to write the
+  // following piece of code.
+  
+  h1, h2 {
+    color: #495057;
+  }
+  h1 {
+    font-size: 62px;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  ```
+
+Summary card for this section can be found on page 10 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### ID & Class Selectors
+
+- _The ID selector_ selects an element based on an uniqe ID attribute and can
+  only be used once. 
+- _The class selector_ selects one or more elements based on a __class__ attribute
+  that can be used multiple times.
+
+For example, consider the following html code
+```html
+<body>
+  <p id="red-text"> Copper mug</p>
+  <p class="blue-text">Hello</p>
+  <p class="blue-text">World</p>
+</body>
+```
+Then, we can use ID and Class selectors to style as follows
+```css
+p {
+  color: yellow;
+}
+#red-text { // ID selector
+  color: red;
+}
+.blue-text { // Class selector
+  color: blue;
+}
+```
+
+__Selector Guidance:__ 
+
+- Classes are often preferred over IDs because they offer greater flexibility and 
+  reusability.
+- It is common to use __type selectors__ for global styles and __class selectors__
+  for more specific visual styles.
+- Classes for components are designed to be combined on a single HTML element for
+  a modular approach to styling. For example,
+  ```css
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1.5rem 3 rem;
+    border-radius: 8px;
+    font-size: 1.6 rem;
+  }
+  .btn-primary {}
+  .btn-secondary {}
+  ```
+  Then in html, we can use these class as follows,
+  ```html
+  <a href="/" class="btn btn-primary">Press Me!</a>
+  ```
+
+Summary card for this section can be found on page 10 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### Pseudo-class Selectors
+
+Pseudo-classes defines styles for a specific state or condition of an HTML element.
+The signature is a keyword with a colon added to the end of a selector.
+
+- __State__ pseudo-classes: dynamic styling based on user interaction & commonly 
+  used for hyperlinks.
+  - `a:link` targets __anchor tags__ that have _not_ yet been visited.
+  - `a:visited` targets __anchor tags__ that have been visited.
+  - `a:hover` targets an element when the cursor is placed over it.
+  - `a:active` targets an element when it is being clicked. However, this pseudo-
+    class is not commonly used.
+
+  __State pseudo-classes guidance:__ it is best practice to style the pseudo-classes
+  of anchor tags instead of styling the anchor element directly.
+
+  ```css
+  // bad practice - does not cover all states.
+  a {
+    color: orange;
+  }
+  // good practice
+  a:link, a:hover {
+    color: orange;
+  }
+  ```
+  Another example of bad-good practice:
+  ```css
+  // bad practice
+  .btn {
+    color: purple;
+  }
+  // good practice
+  .btn:link, .btn:visited {
+    color: purple;
+  }
+  ```
+- __Conditional__ pseudo-classes: styling based on an element position in relation
+  to other elements.
+  - `li:first-child` targets the first child element.
+  - `li:last-child` targets the last child element.
+  - `li:nth-child(n)` targets child elements based on their position.
+
+Summary card for this section can be found on page 11 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### Combinator Selectors
+
+Combining two or more selectors to target elements based on their positions
+relative to each other.
+
+- `div p` __all__ descendant (child) selector
+- `div > p` __direct/first__ descendant (child) selector
+- `h1 + p` adjacent (sibling) selector
+- `h1 ~ p` General sibling selector
+
+The 1st and 2nd are used the most.
+
+Summary card for this section can be found on page 11 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### Specificity
+
+Summary card for this section can be found on page 11 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### Inheritance
+
+Properties set on parent elements are passed to their children by default. 
+
+_But what gets inherited?_
+
+It is mainly text properties that are inherited from parent to child. Those are
+`color`, `font-weight`, `line-height`, `font-family`, `font-style`, `text-align`,
+`font-size`, `letter-spacing`, `text-transform`.
+
+__Inheritance & Specificity guidance:__ Global font styles are set on the body element so that
+all child text elements inherit styles by default.
+```css
+body {
+  color: black;
+  font-weight: 400;
+  font-family: Arial, sans-serif;
+}
+
+// Override
+h1 {
+  color: blue;
+  font-weight: 700;
+  font-size: 52px;
+}
+```
+
+__Inheritance & Text-Align__ <!--Youtube video at 3:44:57-->
+
+### Pseudo-elements Selectors
 
 ## Resources
 
