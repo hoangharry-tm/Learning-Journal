@@ -455,7 +455,26 @@ h1 {
 }
 ```
 
-__Inheritance & Text-Align__ <!--Youtube video at 3:44:57-->
+__Inheritance & Text-Align__ 
+
+We know that text-align only have effect on block elements, not inline elements.
+However, when applying the text-align property to a block-level parent containing
+inline elements, all children will be impacted. An illustration of this is as follows,
+
+![Inheritance-and-Text-Align-Before](<./assets/Inheritance-and-Text-Align-Before.png>)
+
+![Inheritance-and-Text-Align-After](<./assets/Inheritance-and-Text-Align-After.png>)
+
+Then the contents inside are also inherited the text-align property from the
+container.
+
+![Inheritance-and-Text-Align-Inherited-Before](<./assets/Inheritance-and-Text-Align-Inherited-Before.png>)
+
+![Inheritance-and-Text-Align-Inherited-After](<./assets/Inheritance-and-Text-Align-Inherited-After.png>)
+
+Summary card for this section can be found on page 12 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
 
 ### Pseudo-elements Selectors
 
