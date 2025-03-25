@@ -20,6 +20,9 @@ _Table of Contents:_
   - [Specificity](#specificity)
   - [Inheritance](#inheritance)
   - [Pseudo-elements Selectors](#pseudo-elements-selectors)
+- [🌷 Topic 3: CSS Box Model](#-topic-3-css-box-model)
+  - [Background Color](#background-color)
+  - [Width & Height](#width--height)
 
 ## ✍🏻 Topic 1: CSS Text
 
@@ -477,6 +480,40 @@ Summary card for this section can be found on page 12 [⇲](<./assets/CSS Summar
 🚀 [Back to top](#top)
 
 ### Pseudo-elements Selectors
+
+Pseudo-elements are used to style a specific part of an element. However, they are
+not commonly used.
+
+Summary card for this section can be found on page 12 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+## 🌷 Topic 3: CSS Box Model
+
+All HTML elements are treated as rectangular boxes and each box has it own set of
+properties.
+
+![CSS Box Model](<./assets/CSS-Box-model-illustration.png>)
+
+### Background Color
+
+The __background color property__ sets the background color of an element and
+applies to the content and any padding. The property name in CSS is 
+`background-color`.
+
+__Background color guidance:__ It is _sometimes_ used to set the background color
+of entire page or _commonly_ used to set the background color of page sections.
+
+_What is the difference between color and background color?_
+
+| Color                    | Background Color                        |
+|:------------------------:|:---------------------------------------:|
+| Applies to text elements | Applies to the background of an element |
+| `color: #339af0;`        | `background-color: #339af0;`            |
+
+### Width & Height
+
+
 
 ## Resources
 
