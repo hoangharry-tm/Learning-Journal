@@ -513,7 +513,38 @@ _What is the difference between color and background color?_
 
 ### Width & Height
 
+#### Default Block-Level Element Dimensions
 
+By default __block-level__ elements are just big enough to fit its contents _vertically_
+and stretches full-width _horizontally_. Some examples are `h1`, `p`, etc.
+
+Whereas, by default __inline-level__ elements are just big enough to fits its
+contents both vertically and horizontally. Some examples are `a`, `img`, etc.
+
+#### Width & Height Properties
+
+The default box dimensions can be overwritten by the `width` & `height` properties.
+
+```css
+div {
+  width: 500px;
+  height: 100px;
+}
+```
+
+#### _Block-Level_ Sizing Guidance
+
+Generally, we don't usually set width & height properties of _block-level_ elements.
+
+![Block Level Sizing Guidance](<./assets/CSS-Box-model-wh-block-level-guidance.png>)
+
+![An example](<./assets/CSS-Box-model-wh-block-level-guidance-2.png>)
+
+#### _Inline-Level_ Sizing Guidance
+
+Width and Height can be set on some inline elements but not others.
+
+![An example of inline level sizing](<./assets/CSS-Box-model-wh-inline-level-guidance.png>)
 
 ## Resources
 
