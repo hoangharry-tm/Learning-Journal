@@ -647,6 +647,66 @@ There are 3 ways to set the border properties value:
   border-left: 10px double green;
   ```
 
+#### Border Guidance
+
+- Border helps with grouping related contents. E.g. ![CSS-Box-model-border-example-1](<./assets/CSS-Box-model-border-example-1.png>)
+- Individual borders help separate sections. E.g. ![CSS-Box-model-border-example-2](<./assets/CSS-Box-model-border-example-2.png>)
+- Borders can create outline buttons which are _commonly_ used along side solid filled buttons
+
+#### Border Radius
+
+The border radius property has the following signature,
+
+```css
+border-radius: 12px;
+```
+
+Values to be set can be in either `px`, `em`, `rem`, or `%`.
+
+<details>
+<summary><b>🤔 How border radius work?</b></summary>
+
+__A:__ A quarter-circle is placed in the corner of an element and the cut out rounds
+the element corner.
+
+![CSS-Box-model-border-example-3](<./assets/CSS-Box-model-border-example-3.png>)
+![CSS-Box-model-border-example-4](<./assets/CSS-Box-model-border-example-4.png>)
+</details>
+
+<details>
+<summary><b>💊 How to create pills?</b></summary>
+
+__A:__ _Fully-rounded_ corners are created from rectangles by setting the border-radius equal to half of the elements height.
+
+![CSS-Box-model-border-example-5](<./assets/CSS-Box-model-border-example-5.png>)
+
+</details>
+
+<details>
+<summary><b>⭕️ How to create circles?</b></summary>
+
+__A:__ Circular elements are created from _squares_ by setting the border radius equal to half of the elements height.
+
+![CSS-Box-model-border-example-6](<./assets/CSS-Box-model-border-example-6.png>)
+
+</details>
+
+<details>
+<summary><b>🧺 Border Radius Guidance</b></summary>
+
+- Square corners are more formal.
+- Rounding corners can be perceived as more friendly.
+- Fully rounding corners can be perceived as playful.
+- It's ___important___ to have consistent rounding across all elements.
+
+</details>
+
+<br />
+
+Summary card for this section can be found on page 14 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
 ## Resources
 
 - [CSS in 5 minutes](https://www.youtube.com/watch?v=Z4pCqK-V_Wo)
