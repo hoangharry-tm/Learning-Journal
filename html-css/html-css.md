@@ -24,6 +24,8 @@ _Table of Contents:_
   - [Background Color](#background-color)
   - [Width & Height](#width--height)
   - [Border](#border)
+  - [Box Sizing](#box-sizing)
+  - [Margin](#margin)
 
 ## ✍🏻 Topic 1: CSS Text
 
@@ -702,6 +704,50 @@ __A:__ Circular elements are created from _squares_ by setting the border radius
 </details>
 
 <br />
+
+Summary card for this section can be found on page 14 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### Box Sizing
+
+The box-sizing property modifies how the total width and height of an element are calculated.
+
+It's not commonly used, and if it's used the common value is
+
+```css
+box-sizing: border-box;
+```
+
+Summary card for this section can be found on page 15 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### Margin
+
+#### Definition
+
+Margin is the space outside of an element's border creating distance between it and neightboring elements.
+
+#### Margin Properties
+
+There are two ways to set the value of the margin properties.
+
+- _Longhand Margin Properties:_ sets the margin on individual sides.
+
+  ![CSS-Box-model-margin-longhand](<./assets/CSS-Box-model-margin-longhand.png>)
+
+- _Shorthand Margin Properties:_
+
+  ![CSS-Box-model-margin-shorthand](<./assets/CSS-Box-model-margin-shorthand.png>)
+
+#### Margin Guidance
+
+1. Use Margin to apply _whitespace_ between groups of elements.
+  ![CSS-Box-model-margin-guidance-1](<./assets/CSS-Box-model-margin-guidance-1.png>)
+2. Use Margin to apply _whitespace_ between sections.
+  ![CSS-Box-model-margin-guidance-2](<./assets/CSS-Box-model-margin-guidance-2.png>)
+3. It is common to control spacing between elements with margin and other more modern techniques.
 
 Summary card for this section can be found on page 14 [⇲](<./assets/CSS Summary Cards.pdf>)
 
