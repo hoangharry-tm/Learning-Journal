@@ -26,6 +26,8 @@ _Table of Contents:_
   - [Border](#border)
   - [Box Sizing](#box-sizing)
   - [Margin](#margin)
+  - [Display](#display)
+  - [CSS Reset](#css-reset)
 
 ## ✍🏻 Topic 1: CSS Text
 
@@ -753,8 +755,112 @@ Summary card for this section can be found on page 14 [⇲](<./assets/CSS Summar
 
 🚀 [Back to top](#top)
 
+### Display
+
+#### Introduction of Box and Inline Elements
+
+All HTML elements are by default either a block or inline element.
+Here are some characteristics of block and inline elements,
+
+|           Block Elements           |            Inline Elements             |
+| :--------------------------------: | :------------------------------------: |
+|        Starts on a new line        |      Does not start on a new line      |
+|   Takes up full width of a page    |  Only occupies width of their content  |
+| E.g. `<h1>`, `<p>`, `<ul>`, `<li>` | E.g. `<a>`, `<img>`, `<br>`, `<input>` |
+|   ![CSS-Box-model-display-img-1]   |     ![CSS-Box-model-display-img-2]     |
+
+#### _Box and Inline Elements_ vs _The Box Model_
+
+- __Box Elements__: follow _The Box Model_ rules so applying any properties work
+  as expected.
+- __Inline Elements__: ___DO___ not follow _The Box Model_ rules so applying some
+  properties do not work as expected.
+  ![CSS-Box-model-display-img-3]
+
+#### Display Property
+
+It sets how the elements is formatted and positioned. There are 5 different values
+to be set.
+
+```css
+display: block;
+display: inline;
+display: inline-block;
+display: flex;
+display: grid;
+```
+
+The `inline-block` value is a special value that combines both `inline` and `block` as expected.
+
+![CSS-Box-model-display-img-4]
+
+##### `inline-block` Guidance
+
+It is common to apply `inline-block` to inline elements so they _flow inline_ (i.e. next to each other) but all box properties can be applied. E.g.
+![CSS-Box-model-display-inline-block-eg-1]
+
+Summary card for this section can be found on page 15 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### CSS Reset
+
+Browsers have built-in CSS default rules that style HTML elements.
+
+<details>
+<summary>
+These rules include:
+</summary>
+
+- `<body>`
+  - `5px` margin
+- `<h1>`
+  - `21px` margin top & bottom
+  - `32px` font-size
+  - `700` font-weight
+- `<p>`
+  - `16px` margin top & bottom
+  - `16px` font-size
+  - `400` font-weight
+- `ol`, `ul`
+  - `16px` margin top & bottom
+  - `40px` left padding
+
+</details>
+
+<br />
+
+Thus, it is very common to strip away the main default browser styles to give
+us a _blank_ canvas to work from.
+
+```css
+// Global Resets
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// Element Resets
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul, ol {
+  list-style: none;
+}
+```
+
 ## Resources
 
 - [CSS in 5 minutes](https://www.youtube.com/watch?v=Z4pCqK-V_Wo)
 - [Detailed CSS course on Youtube (Part 1)](https://youtu.be/-G-zic_LS0A?si=sooerJXNCADr5Jte)
 - [Detailed CSS course on Youtube (Part 2)](https://youtu.be/1ra4yeyjFFc?si=J16lp3yHj1lIzkvx)
+
+<!--Links-->
+[CSS-Box-model-display-img-1]: <./assets/CSS-Box-model-display-img-1.png>
+[CSS-Box-model-display-img-2]: <./assets/CSS-Box-model-display-img-2.png>
+[CSS-Box-model-display-img-3]: <./assets/CSS-Box-model-display-img-3.png>
+[CSS-Box-model-display-img-4]: <./assets/CSS-Box-model-display-img-4.png>
+[CSS-Box-model-display-inline-block-eg-1]: <./assets/CSS-Box-model-display-inline-block-eg-1.png>
