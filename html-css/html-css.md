@@ -898,6 +898,14 @@ The maximum width property ensures elements are responsive for different screen 
 
 ![CSS-Box-model-container-img-2]
 
+Max-width behaves differently depending on the display property of the HTML element.
+
+![CSS-Box-model-container-img-3]
+
+Here is the comparison between the `width` and `max-width` properties.
+
+![CSS-Box-model-container-img-4]
+
 ### Max Height
 
 ### Maximum & Minimum Height
@@ -916,6 +924,8 @@ The maximum width property ensures elements are responsive for different screen 
 [CSS-Box-model-display-inline-block-eg-1]: <./assets/CSS-Box-model-display-inline-block-eg-1.png>
 [CSS-Box-model-container-img-1]: <./assets/CSS-Box-model-container-img-1.png>
 [CSS-Box-model-container-img-2]: <./assets/CSS-Box-model-container-img-2.png>
+[CSS-Box-model-container-img-3]: <./assets/CSS-Box-model-container-img-3.png>
+[CSS-Box-model-container-img-4]: <./assets/CSS-Box-model-container-img-4.png>
 
 <!--Notes-->
 <!--
