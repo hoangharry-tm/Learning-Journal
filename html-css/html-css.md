@@ -28,6 +28,10 @@ _Table of Contents:_
   - [Margin](#margin)
   - [Display](#display)
   - [CSS Reset](#css-reset)
+  - [Main Container](#main-container)
+  - [Max Width](#max-width)
+  - [Max Height](#max-height)
+  - [Maximum & Minimum Height](#maximum--minimum-height)
 
 ## ✍🏻 Topic 1: CSS Text
 
@@ -852,6 +856,52 @@ ul, ol {
 }
 ```
 
+Summary card for this section can be found on page 15 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### Main Container
+
+It is very common for a website to have a wrapper which adds margin left & right
+as well as centers all the content.
+For example,
+![CSS-Box-model-container-img-1]
+
+To create a container, a suitable width is chosen to prevent content from excessively
+stretching on larger screen size.
+
+#### The keyword `auto`
+
+It's a value that enables the browser to automatically determine a property's size.
+E.g.
+
+```css
+.img {
+  width: 400px;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+```
+
+Summary card for this section can be found on page 16 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### Max Width
+
+The maximum width property ensures elements are responsive for different screen sizes.
+
+![CSS-Box-model-container-img-2]
+
+### Max Height
+
+### Maximum & Minimum Height
+
 ## Resources
 
 - [CSS in 5 minutes](https://www.youtube.com/watch?v=Z4pCqK-V_Wo)
@@ -864,3 +914,12 @@ ul, ol {
 [CSS-Box-model-display-img-3]: <./assets/CSS-Box-model-display-img-3.png>
 [CSS-Box-model-display-img-4]: <./assets/CSS-Box-model-display-img-4.png>
 [CSS-Box-model-display-inline-block-eg-1]: <./assets/CSS-Box-model-display-inline-block-eg-1.png>
+[CSS-Box-model-container-img-1]: <./assets/CSS-Box-model-container-img-1.png>
+[CSS-Box-model-container-img-2]: <./assets/CSS-Box-model-container-img-2.png>
+
+<!--Notes-->
+<!--
+Summary card for this section can be found on page 15 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+-->
