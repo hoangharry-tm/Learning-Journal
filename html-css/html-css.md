@@ -29,9 +29,9 @@ _Table of Contents:_
   - [Display](#display)
   - [CSS Reset](#css-reset)
   - [Main Container](#main-container)
-  - [Max Width](#max-width)
-  - [Max Height](#max-height)
-  - [Maximum & Minimum Height](#maximum--minimum-height)
+  - [Width](#width)
+  - [Height](#height)
+  - [Maximum & Minimum Properties](#maximum--minimum-properties)
 
 ## ✍🏻 Topic 1: CSS Text
 
@@ -892,7 +892,9 @@ Summary card for this section can be found on page 16 [⇲](<./assets/CSS Summar
 
 🚀 [Back to top](#top)
 
-### Max Width
+### Width
+
+#### Max Width
 
 The maximum width property ensures elements are responsive for different screen sizes.
 
@@ -902,13 +904,49 @@ Max-width behaves differently depending on the display property of the HTML elem
 
 ![CSS-Box-model-container-img-3]
 
-Here is the comparison between the `width` and `max-width` properties.
+Here is the comparison between the `width` and `max-width` properties for ___block___ element.
 
 ![CSS-Box-model-container-img-4]
 
-### Max Height
+For ___inline___ element, it's a little bit different.
 
-### Maximum & Minimum Height
+![CSS-Box-model-container-img-5]
+
+#### Min Width
+
+It behaves somewhat similar to max width but it doesn't allow the object to go lower
+than the `min-width` specified.
+
+#### Width Summary
+
+![CSS-Box-model-container-img-6]
+
+### Height
+
+![CSS-Box-model-container-img-7]
+
+#### Max Height
+
+Max Width and Max Height behave in fundamentally different ways.
+
+- __Max Width__: Based on its container, so it applies even _without_ content.
+- __Max Height__: Only applies when _content_ exceeds the limit.
+
+![CSS-Box-model-container-img-8]
+
+This brings us to __overflow__. `Overflow` controls what happens to content that overflows an element box.
+Here are the default properties of `overflow`,
+
+```css
+overflow: visible;  // Default
+overflow: scroll;   // Scrollbar always present
+overflow: hidden;   // Clips content
+overflow: auto;     // Scrollbar only when necessary
+```
+
+### Maximum & Minimum Properties
+
+- Max & Min _Width_ are more commonly used compared to Max & Min _Heigth_ due to their role in creating __responsive__ layouts
 
 ## Resources
 
@@ -926,6 +964,10 @@ Here is the comparison between the `width` and `max-width` properties.
 [CSS-Box-model-container-img-2]: <./assets/CSS-Box-model-container-img-2.png>
 [CSS-Box-model-container-img-3]: <./assets/CSS-Box-model-container-img-3.png>
 [CSS-Box-model-container-img-4]: <./assets/CSS-Box-model-container-img-4.png>
+[CSS-Box-model-container-img-5]: <./assets/CSS-Box-model-container-img-5.png>
+[CSS-Box-model-container-img-6]: <./assets/CSS-Box-model-container-img-6.png>
+[CSS-Box-model-container-img-7]: <./assets/CSS-Box-model-container-img-7.png>
+[CSS-Box-model-container-img-8]: <./assets/CSS-Box-model-container-img-8.png>
 
 <!--Notes-->
 <!--
