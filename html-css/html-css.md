@@ -944,9 +944,29 @@ overflow: hidden;   // Clips content
 overflow: auto;     // Scrollbar only when necessary
 ```
 
+<ins><b>Max-Height Guidance</b></ins>:
+
+- Used when you want to ensure elements do not exceed a certain height.
+
+  E.g. the modal window has a max-height & we can use CSS to get a scroll.
+
+  ![CSS-Box-model-container-img-9]
+
+#### Min Height
+
+![CSS-Box-model-container-img-10]
+
+#### Height Summary
+
+![CSS-Box-model-container-img-11]
+
 ### Maximum & Minimum Properties
 
 - Max & Min _Width_ are more commonly used compared to Max & Min _Heigth_ due to their role in creating __responsive__ layouts
+
+Summary card for this section can be found on page 16 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
 
 ## Resources
 
@@ -968,6 +988,9 @@ overflow: auto;     // Scrollbar only when necessary
 [CSS-Box-model-container-img-6]: <./assets/CSS-Box-model-container-img-6.png>
 [CSS-Box-model-container-img-7]: <./assets/CSS-Box-model-container-img-7.png>
 [CSS-Box-model-container-img-8]: <./assets/CSS-Box-model-container-img-8.png>
+[CSS-Box-model-container-img-9]: <./assets/CSS-Box-model-container-img-9.png>
+[CSS-Box-model-container-img-10]: <./assets/CSS-Box-model-container-img-10.png>
+[CSS-Box-model-container-img-11]: <./assets/CSS-Box-model-container-img-11.png>
 
 <!--Notes-->
 <!--
