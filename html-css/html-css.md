@@ -36,6 +36,7 @@ _Table of Contents:_
   - [Absolute & Relative Units](#absolute--relative-units)
   - [Percentages](#percentages)
   - [Rems & Ems](#rems--ems)
+  - [VH & VW](#vh--vw)
 
 ## ✍🏻 Topic 1: CSS Text
 
@@ -1023,6 +1024,57 @@ __Definition:__
   for creating responsive webpages. For example,
   ![CSS-Units-Percentages-img-4]
 
+  However, note that by default the root or HTML tag has the font size `16px`.
+  If that makes your calculation using `rems` complicated, consider setting the default
+  font size or the root font size to `10px`.
+
+  ```css
+  html {
+    font-size: 10px;
+  }
+  ```
+
+  <details>
+  <summary><b>Rems Guidance</b></summary>
+
+  `rems` are commonly used on `font-size`, `margins`, and `paddings` to create fully responsive webpages.
+  ![CSS-Units-Percentages-img-5]
+
+  </details>
+- _`Ems`_ (Not as _frequently_ used as `rems`): A relative unit that is more context specific compared to `rems`.
+
+  |                      Typography                      |                   Other Properties                   |
+  | :--------------------------------------------------: | :--------------------------------------------------: |
+  |     Relative to the font-size <br> of the parent     | Relative to the font-size <br> of the element itself |
+  | `font-size` <br> `line-height` <br> `letter-spacing` |  `width` <br> `height` <br> `margin` <br> `padding`  |
+
+  <details>
+  <summary><b>Ems Guidance</b></summary>
+
+  Ems provide a higher level of precision for styling smaller components as sizing
+  is based on font-size of the element itself.
+  ![CSS-Units-Percentages-img-6]
+
+  </details>
+
+### VH & VW
+
+View height (vh) & view width (vw) are units that are a percentage of the browsers
+visible window.
+
+![CSS-Units-vh-vw-img-1]
+
+_VH and VW Guidance_:
+
+- `vh` can be used on hero sections in conjunction with `min-height` so content
+  always above the fold.
+- `vw` can be useful for creating responsive text when it is a main standalone
+  element and not confined within a container.
+
+Summary card for this section can be found on page 18 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
 ## Resources
 
 - [CSS in 5 minutes](https://www.youtube.com/watch?v=Z4pCqK-V_Wo)
@@ -1053,6 +1105,9 @@ __Definition:__
 [CSS-Units-Percentages-img-2]: <./assets/CSS-Units-Percentages-img-2.png>
 [CSS-Units-Percentages-img-3]: <./assets/CSS-Units-Percentages-img-3.png>
 [CSS-Units-Percentages-img-4]: <./assets/CSS-Units-Percentages-img-4.png>
+[CSS-Units-Percentages-img-5]: <./assets/CSS-Units-Percentages-img-5.png>
+[CSS-Units-Percentages-img-6]: <./assets/CSS-Units-Percentages-img-6.png>
+[CSS-Units-vh-vw-img-1]: <./assets/CSS-Units-vh-vw-img-1.png>
 
 <!--Notes-->
 <!--
