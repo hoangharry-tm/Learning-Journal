@@ -32,6 +32,10 @@ _Table of Contents:_
   - [Width](#width)
   - [Height](#height)
   - [Maximum & Minimum Properties](#maximum--minimum-properties)
+- [👨🏻‍🎨 Topic 4: CSS Units](#-topic-4-css-units)
+  - [Absolute & Relative Units](#absolute--relative-units)
+  - [Percentages](#percentages)
+  - [Rems & Ems](#rems--ems)
 
 ## ✍🏻 Topic 1: CSS Text
 
@@ -968,6 +972,57 @@ Summary card for this section can be found on page 16 [⇲](<./assets/CSS Summar
 
 🚀 [Back to top](#top)
 
+## 👨🏻‍🎨 Topic 4: CSS Units
+
+### Absolute & Relative Units
+
+- Relative units are essential for _responsive_ webpages so elements can dynamically
+  adjust for different screen sizes.
+
+<!--region: comparion-->
+
+|                             Absolute Units                              |                                           Relative Units <br /> (Commonly used)                                           |
+| :---------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------: |
+| Size is fixed and does not change in <br /> relation to parent elements | Size is based on the size of a parent <br /> element and adjusts _proportionally_ to <br /> changes in the parent element |
+| `px` (Used for specific case) <br /> `pt`, `in`, `cm`, `mm` (Uncommon)  |                                               `%`, `em`, `rem`, `vh`, `vw`                                                |
+
+<!--endregion-->
+
+Summary card for this section can be found on page 18 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### Percentages
+
+___Definition:___ A unit that is always relative to some other value.
+
+![CSS-Units-Percentages-img-1]
+
+#### Percentages Guidance
+
+- Percentages are used in conjunction with `max-width` on main containers so that
+  the webpage is fully responsive.
+- It is common to set images inside a `grid` or `flex` container to `100%` so it
+  fills the cell and adapts responsively.
+- There are cases when you want to set a button width to 100% so it fill its container
+  and adapts responsively.
+  ![CSS-Units-Percentages-img-2]
+- Percentage values are used for fully rounded corners as pixels require manual
+  calculation.
+  ![CSS-Units-Percentages-img-3]
+
+Summary card for this section can be found on page 18 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### Rems & Ems
+
+__Definition:__
+
+- _`Rems`_: Relative to the root elements font size and are the key ingredient
+  for creating responsive webpages. For example,
+  ![CSS-Units-Percentages-img-4]
+
 ## Resources
 
 - [CSS in 5 minutes](https://www.youtube.com/watch?v=Z4pCqK-V_Wo)
@@ -979,7 +1034,9 @@ Summary card for this section can be found on page 16 [⇲](<./assets/CSS Summar
 [CSS-Box-model-display-img-2]: <./assets/CSS-Box-model-display-img-2.png>
 [CSS-Box-model-display-img-3]: <./assets/CSS-Box-model-display-img-3.png>
 [CSS-Box-model-display-img-4]: <./assets/CSS-Box-model-display-img-4.png>
+
 [CSS-Box-model-display-inline-block-eg-1]: <./assets/CSS-Box-model-display-inline-block-eg-1.png>
+
 [CSS-Box-model-container-img-1]: <./assets/CSS-Box-model-container-img-1.png>
 [CSS-Box-model-container-img-2]: <./assets/CSS-Box-model-container-img-2.png>
 [CSS-Box-model-container-img-3]: <./assets/CSS-Box-model-container-img-3.png>
@@ -991,6 +1048,11 @@ Summary card for this section can be found on page 16 [⇲](<./assets/CSS Summar
 [CSS-Box-model-container-img-9]: <./assets/CSS-Box-model-container-img-9.png>
 [CSS-Box-model-container-img-10]: <./assets/CSS-Box-model-container-img-10.png>
 [CSS-Box-model-container-img-11]: <./assets/CSS-Box-model-container-img-11.png>
+
+[CSS-Units-Percentages-img-1]: <./assets/CSS-Units-Percentages-img-1.png>
+[CSS-Units-Percentages-img-2]: <./assets/CSS-Units-Percentages-img-2.png>
+[CSS-Units-Percentages-img-3]: <./assets/CSS-Units-Percentages-img-3.png>
+[CSS-Units-Percentages-img-4]: <./assets/CSS-Units-Percentages-img-4.png>
 
 <!--Notes-->
 <!--
