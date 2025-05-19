@@ -37,6 +37,10 @@ _Table of Contents:_
   - [Percentages](#percentages)
   - [Rems & Ems](#rems--ems)
   - [VH & VW](#vh--vw)
+- [🧸 Topic 5: CSS Functions](#-topic-5-css-functions)
+  - [CSS Variables](#css-variables)
+  - [CSS Calculations](#css-calculations)
+- [🤯 Flexbox](#-flexbox)
 
 ## ✍🏻 Topic 1: CSS Text
 
@@ -1075,6 +1079,54 @@ Summary card for this section can be found on page 18 [⇲](<./assets/CSS Summar
 
 🚀 [Back to top](#top)
 
+## 🧸 Topic 5: CSS Functions
+
+### CSS Variables
+
+(CSS variables) allows us to store values to make it easier to maintain consistenvy
+and more easily make global style changes.
+
+![CSS-Functions-CSS-Variables-img-1]
+
+___What is the root pseudo-class?___ A special pseudo-class selector that matches
+the root element in a document's hierachy.
+
+![CSS-Functions-CSS-Variables-img-2]
+
+Summary card for this section can be found on page 20 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### CSS Calculations
+
+(CSS Calculations) perform dynamic calculations when setting values.
+
+![CSS-Functions-CSS-Calculations-img-1]
+
+Summary card for this section can be found on page 20 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+## 🤯 Flexbox
+
+### Definition
+
+Flexbox is a one-dimensional layout model making it simple to arrange items in rows
+or columns and distribute space.
+
+### Flex container and Flex Items
+
+![CSS-Flexbox-img-1]
+
+### Display `flex`
+
+The `display` property on a container element wil activate flexbox's layout features
+on children elements.
+
+![CSS-Flexbox-img-2]
+
+![CSS-Flexbox-img-3]
+
 ## Resources
 
 - [CSS in 5 minutes](https://www.youtube.com/watch?v=Z4pCqK-V_Wo)
@@ -1082,13 +1134,13 @@ Summary card for this section can be found on page 18 [⇲](<./assets/CSS Summar
 - [Detailed CSS course on Youtube (Part 2)](https://youtu.be/1ra4yeyjFFc?si=J16lp3yHj1lIzkvx)
 
 <!--Links-->
+
+<!--region: CSS Box Model-->
 [CSS-Box-model-display-img-1]: <./assets/CSS-Box-model-display-img-1.png>
 [CSS-Box-model-display-img-2]: <./assets/CSS-Box-model-display-img-2.png>
 [CSS-Box-model-display-img-3]: <./assets/CSS-Box-model-display-img-3.png>
 [CSS-Box-model-display-img-4]: <./assets/CSS-Box-model-display-img-4.png>
-
 [CSS-Box-model-display-inline-block-eg-1]: <./assets/CSS-Box-model-display-inline-block-eg-1.png>
-
 [CSS-Box-model-container-img-1]: <./assets/CSS-Box-model-container-img-1.png>
 [CSS-Box-model-container-img-2]: <./assets/CSS-Box-model-container-img-2.png>
 [CSS-Box-model-container-img-3]: <./assets/CSS-Box-model-container-img-3.png>
@@ -1100,7 +1152,9 @@ Summary card for this section can be found on page 18 [⇲](<./assets/CSS Summar
 [CSS-Box-model-container-img-9]: <./assets/CSS-Box-model-container-img-9.png>
 [CSS-Box-model-container-img-10]: <./assets/CSS-Box-model-container-img-10.png>
 [CSS-Box-model-container-img-11]: <./assets/CSS-Box-model-container-img-11.png>
+<!--endregion-->
 
+<!--region: CSS Units-->
 [CSS-Units-Percentages-img-1]: <./assets/CSS-Units-Percentages-img-1.png>
 [CSS-Units-Percentages-img-2]: <./assets/CSS-Units-Percentages-img-2.png>
 [CSS-Units-Percentages-img-3]: <./assets/CSS-Units-Percentages-img-3.png>
@@ -1108,6 +1162,19 @@ Summary card for this section can be found on page 18 [⇲](<./assets/CSS Summar
 [CSS-Units-Percentages-img-5]: <./assets/CSS-Units-Percentages-img-5.png>
 [CSS-Units-Percentages-img-6]: <./assets/CSS-Units-Percentages-img-6.png>
 [CSS-Units-vh-vw-img-1]: <./assets/CSS-Units-vh-vw-img-1.png>
+<!--endregion-->
+
+<!--region: CSS Functions-->
+[CSS-Functions-CSS-Variables-img-1]: <./assets/CSS-Functions-CSS-Variables-img-1.png>
+[CSS-Functions-CSS-Variables-img-2]: <./assets/CSS-Functions-CSS-Variables-img-2.png>
+[CSS-Functions-CSS-Calculations-img-1]: <./assets/CSS-Functions-CSS-Calculations-img-1.png>
+<!--endregion-->
+
+<!--region: CSS Flexbox-->
+[CSS-Flexbox-img-1]: <./assets/CSS-Flexbox-img-1.png>
+[CSS-Flexbox-img-2]: <./assets/CSS-Flexbox-img-2.png>
+[CSS-Flexbox-img-3]: <./assets/CSS-Flexbox-img-3.png>
+<!--endregion-->
 
 <!--Notes-->
 <!--
