@@ -40,7 +40,12 @@ _Table of Contents:_
 - [🧸 Topic 5: CSS Functions](#-topic-5-css-functions)
   - [CSS Variables](#css-variables)
   - [CSS Calculations](#css-calculations)
-- [🤯 Flexbox](#-flexbox)
+- [🤯 Topic 6: Flexbox](#-topic-6-flexbox)
+  - [Introduction to Flexbox](#introduction-to-flexbox)
+  - [Normal Flow vs. Flexbox](#normal-flow-vs-flexbox)
+  - [Justify Content](#justify-content)
+  - [Align Items](#align-items)
+  - [Gap](#gap)
 
 ## ✍🏻 Topic 1: CSS Text
 
@@ -1107,18 +1112,20 @@ Summary card for this section can be found on page 20 [⇲](<./assets/CSS Summar
 
 🚀 [Back to top](#top)
 
-## 🤯 Flexbox
+## 🤯 Topic 6: Flexbox
 
-### Definition
+### Introduction to Flexbox
+
+#### Definition
 
 Flexbox is a one-dimensional layout model making it simple to arrange items in rows
 or columns and distribute space.
 
-### Flex container and Flex Items
+#### Flex container and Flex Items
 
 ![CSS-Flexbox-img-1]
 
-### Display `flex`
+#### Display `flex`
 
 The `display` property on a container element wil activate flexbox's layout features
 on children elements.
@@ -1126,6 +1133,151 @@ on children elements.
 ![CSS-Flexbox-img-2]
 
 ![CSS-Flexbox-img-3]
+
+#### Main and Cross Axis
+
+- The _main axis_ is the primary direction in which flex items are laid out and,
+- The _cross axis_ determines distribution on secondary axis.
+
+![CSS-Flexbox-img-4]
+
+#### Flex Direction
+
+It controls the orientation of the main axis.
+
+![CSS-Flexbox-img-5]
+
+<details>
+<summary><b>Flex Direction Guidance</b></summary>
+
+- In most cases flex-direction is set to `row` or `column`
+  ![CSS-Flexbox-img-6]
+
+</details>
+
+Summary card for this section can be found on page 22 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### Normal Flow vs. Flexbox
+
+![CSS-Flexbox-img-7]
+
+#### Normal Flow
+
+- `block` and `inline` elements behave differently in normal flow.
+  ![CSS-Flexbox-img-8]
+- Applying `text-align` to a block-level parent will impact both `block` & `inline` children through different mechanisms.
+  ![CSS-Flexbox-img-9]
+
+#### Flexbox
+
+Flexbox overrides display behavior of `block` & `inline` elements.
+![CSS-Flexbox-img-10]
+
+#### Comparison
+
+![CSS-Flexbox-img-11]
+
+Summary card for this section can be found on page 22 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### Justify Content
+
+#### Flex Container Size
+
+Understanding a flex-container's dimensions is essential for visualising how flex
+items will be positioned.
+
+![CSS-Flexbox-img-12]
+
+#### Justify Content
+
+(It) sets how flex items are positioned along the main axis.
+
+![CSS-Flexbox-img-13]
+
+#### Spacing on The Shifted Main Axis
+
+![CSS-Flexbox-img-14]
+
+#### Justify Content Guidance
+
+- Often used to align and space navigation bars
+  ![CSS-Flexbox-img-15]
+- Can be used to align entire sections
+  ![CSS-Flexbox-img-16]
+- Often used for spacing and alignment of simple one-dimensional components
+  ![CSS-Flexbox-img-17]
+  ![CSS-Flexbox-img-18]
+
+Summary card for this section can be found on page 23 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### Align Items
+
+(It) sets how flex items are positioned along the cross axis.
+
+![CSS-Flexbox-img-19]
+
+__Align Items values:__
+
+When no height is set,
+
+![CSS-Flexbox-img-20]
+
+In contrast, when height is set, the flex items have more space to move around.
+
+![CSS-Flexbox-img-21]
+
+#### Shifting the main axis
+
+When no height is set on the container, its height is sum of flex item's height &
+`justify` content will have no impact.
+
+![CSS-Flexbox-img-22]
+
+However, if height is set on the container, there can be additional space so justify
+content will have an impact.
+
+![CSS-Flexbox-img-23]
+
+#### Align Items Guidance
+
+- Commonly used on navigation menus and footers
+  ![CSS-Flexbox-img-24]
+- Positioning items inside a component in a flex row
+  ![CSS-Flexbox-img-25]
+  ![CSS-Flexbox-img-26]
+
+Summary card for this section can be found on page 23 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### Gap
+
+#### Flexbox and The Box Model
+
+Box model properties can still be used in a flexbox layout to control spacing.
+
+![CSS-Flexbox-img-27]
+
+#### `Gap` Property
+
+![CSS-Flexbox-img-28]
+
+#### `Margin` and `Gap` Guidance
+
+- `Margin` is used when you want different spacing values between flex items
+  ![CSS-Flexbox-img-29]
+- `Gap` is used when you want uniform spacing values between flex items
+  ![CSS-Flexbox-img-30]
+
+Summary card for this section can be found on page 24 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
 
 ## Resources
 
@@ -1174,11 +1326,39 @@ on children elements.
 [CSS-Flexbox-img-1]: <./assets/CSS-Flexbox-img-1.png>
 [CSS-Flexbox-img-2]: <./assets/CSS-Flexbox-img-2.png>
 [CSS-Flexbox-img-3]: <./assets/CSS-Flexbox-img-3.png>
+[CSS-Flexbox-img-4]: <./assets/CSS-Flexbox-img-4.png>
+[CSS-Flexbox-img-5]: <./assets/CSS-Flexbox-img-5.png>
+[CSS-Flexbox-img-6]: <./assets/CSS-Flexbox-img-6.png>
+[CSS-Flexbox-img-7]: <./assets/CSS-Flexbox-img-7.png>
+[CSS-Flexbox-img-8]: <./assets/CSS-Flexbox-img-8.png>
+[CSS-Flexbox-img-9]: <./assets/CSS-Flexbox-img-9.png>
+[CSS-Flexbox-img-10]: <./assets/CSS-Flexbox-img-10.png>
+[CSS-Flexbox-img-11]: <./assets/CSS-Flexbox-img-11.png>
+[CSS-Flexbox-img-12]: <./assets/CSS-Flexbox-img-12.png>
+[CSS-Flexbox-img-13]: <./assets/CSS-Flexbox-img-13.png>
+[CSS-Flexbox-img-14]: <./assets/CSS-Flexbox-img-14.png>
+[CSS-Flexbox-img-15]: <./assets/CSS-Flexbox-img-15.png>
+[CSS-Flexbox-img-16]: <./assets/CSS-Flexbox-img-16.png>
+[CSS-Flexbox-img-17]: <./assets/CSS-Flexbox-img-17.png>
+[CSS-Flexbox-img-18]: <./assets/CSS-Flexbox-img-18.png>
+[CSS-Flexbox-img-19]: <./assets/CSS-Flexbox-img-19.png>
+[CSS-Flexbox-img-20]: <./assets/CSS-Flexbox-img-20.png>
+[CSS-Flexbox-img-21]: <./assets/CSS-Flexbox-img-21.png>
+[CSS-Flexbox-img-22]: <./assets/CSS-Flexbox-img-22.png>
+[CSS-Flexbox-img-23]: <./assets/CSS-Flexbox-img-23.png>
+[CSS-Flexbox-img-24]: <./assets/CSS-Flexbox-img-24.png>
+[CSS-Flexbox-img-25]: <./assets/CSS-Flexbox-img-25.png>
+[CSS-Flexbox-img-26]: <./assets/CSS-Flexbox-img-26.png>
+[CSS-Flexbox-img-27]: <./assets/CSS-Flexbox-img-27.png>
+[CSS-Flexbox-img-28]: <./assets/CSS-Flexbox-img-28.png>
+[CSS-Flexbox-img-29]: <./assets/CSS-Flexbox-img-29.png>
+[CSS-Flexbox-img-30]: <./assets/CSS-Flexbox-img-30.png>
 <!--endregion-->
 
-<!--Notes-->
 <!--
-Summary card for this section can be found on page 15 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+Summary card for this section can be found on page 24 [⇲](<./assets/CSS Summary Cards.pdf>)
 
 🚀 [Back to top](#top)
+
 -->
