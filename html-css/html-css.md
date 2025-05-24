@@ -46,6 +46,8 @@ _Table of Contents:_
   - [Justify Content](#justify-content)
   - [Align Items](#align-items)
   - [Gap](#gap)
+  - [Nested Flexbox](#nested-flexbox)
+  - [Centering](#centering)
 
 ## ✍🏻 Topic 1: CSS Text
 
@@ -1279,6 +1281,66 @@ Summary card for this section can be found on page 24 [⇲](<./assets/CSS Summar
 
 🚀 [Back to top](#top)
 
+### Nested Flexbox
+
+It is _common_ to have a flexbox layout inside another flexbox layout.
+A flex item within a flex container can also function as a flex container itself,
+allowing for __multi-level__ flex layouts.
+
+![CSS-Flexbox-img-31]
+
+#### Nested Flexbox Guidance
+
+- Common used in sections and components.
+  ![CSS-Flexbox-img-32]
+
+### Centering
+
+Flexbox offers a modern & flexible approach to centering items vertically and
+horizontally.
+
+![CSS-Flexbox-img-33]
+
+#### Horizontal Centering a Container
+
+This can be achieved either by using the Box Model `margin` Property or by using
+`flexbox`.
+
+![CSS-Flexbox-img-34]
+
+#### Vertical Centering a Container
+
+_(Parent Container Has A Set Height)_
+
+![CSS-Flexbox-img-35]
+
+#### Centering Guidance
+
+__Horizontal Centering Guidance__
+
+- `margin` is often used to establish a webpage's main container as it is a simple
+  method for horizontal centering.
+  ![CSS-Flexbox-img-36]
+- Flexbox properties make it simple to horizontally center regular content containers.
+- Padding is used to create equal internal space `left` and `right` around containers like cards & elements like anchor tags.
+  ![CSS-Flexbox-img-37]
+  This creates an illusion that the ___content___ inside is centered.
+
+__Vertically Centering Guidance__
+
+- Flexbox properties are often used to vertically center UI elements inside a flex container that has a set height.
+  ![CSS-Flexbox-img-38]
+- Padding is used to create equal internal space `top` and `bottom` around containers like cards & elements like anchor tags.
+  ![CSS-Flexbox-img-40]
+
+All in all, here's the table comprises of all the guidance.
+
+![CSS-Flexbox-img-39]
+
+Summary card for this section can be found on page 24 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
 ## Resources
 
 - [CSS in 5 minutes](https://www.youtube.com/watch?v=Z4pCqK-V_Wo)
@@ -1353,6 +1415,16 @@ Summary card for this section can be found on page 24 [⇲](<./assets/CSS Summar
 [CSS-Flexbox-img-28]: <./assets/CSS-Flexbox-img-28.png>
 [CSS-Flexbox-img-29]: <./assets/CSS-Flexbox-img-29.png>
 [CSS-Flexbox-img-30]: <./assets/CSS-Flexbox-img-30.png>
+[CSS-Flexbox-img-31]: <./assets/CSS-Flexbox-img-31.png>
+[CSS-Flexbox-img-32]: <./assets/CSS-Flexbox-img-32.png>
+[CSS-Flexbox-img-33]: <./assets/CSS-Flexbox-img-33.png>
+[CSS-Flexbox-img-34]: <./assets/CSS-Flexbox-img-34.png>
+[CSS-Flexbox-img-35]: <./assets/CSS-Flexbox-img-35.png>
+[CSS-Flexbox-img-36]: <./assets/CSS-Flexbox-img-36.png>
+[CSS-Flexbox-img-37]: <./assets/CSS-Flexbox-img-37.png>
+[CSS-Flexbox-img-38]: <./assets/CSS-Flexbox-img-38.png>
+[CSS-Flexbox-img-39]: <./assets/CSS-Flexbox-img-39.png>
+[CSS-Flexbox-img-40]: <./assets/CSS-Flexbox-img-40.png>
 <!--endregion-->
 
 <!--
