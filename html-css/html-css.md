@@ -48,6 +48,10 @@ _Table of Contents:_
   - [Gap](#gap)
   - [Nested Flexbox](#nested-flexbox)
   - [Centering](#centering)
+  - [Flex Children](#flex-children)
+  - [Flex Wrap & Align Content](#flex-wrap--align-content)
+- [📺 Topic 7: CSS Grid](#-topic-7-css-grid)
+  - [Introduction to CSS Grid](#introduction-to-css-grid)
 
 ## ✍🏻 Topic 1: CSS Text
 
@@ -1341,6 +1345,102 @@ Summary card for this section can be found on page 24 [⇲](<./assets/CSS Summar
 
 🚀 [Back to top](#top)
 
+### Flex Children
+
+#### Flex Item Properties
+
+Flexbox also has properties that control the behavior and positioning of flex-items.
+
+![CSS-Flexbox-img-41]
+
+#### Flex-Grow
+
+(It) determines how flex-items expand to fill extra space in a container based on a set
+of proportions.
+
+![CSS-Flexbox-img-42]
+![CSS-Flexbox-img-43]
+
+#### Flex-Shrink
+
+(It) determines how flex-items shrink relative to others in a container where there
+isn't enough space.
+
+![CSS-Flexbox-img-44]
+
+Items shrink based on their `flex-shrink` value relative to the total.
+
+![CSS-Flexbox-img-45]
+
+#### Align-Self
+
+(It) sets individual flex items alignment by overriding the flex containers default
+align-items value.
+
+![CSS-Flexbox-img-46]
+
+Here are all the values of `align-self`
+
+![CSS-Flexbox-img-47]
+
+#### Order
+
+Changes the visual order of flex items independent of their order in the HTML
+markup.
+
+![CSS-Flexbox-img-48]
+
+Summary card for this section can be found on page 25 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### Flex Wrap & Align Content
+
+#### Shrinking Behavior
+
+If flex items are larger than their container, by default they will shrink to fit
+inside.
+
+![CSS-Flexbox-img-49]
+
+#### Flex-Wrap
+
+Pushes flex-items onto multiple lines instead of being forced to fit on a single line when they exceed the container.
+
+![CSS-Flexbox-img-50]
+![CSS-Flexbox-img-51]
+
+#### Align-Content
+
+Controls the alignment of flex-items along the _cross-axis_ when there are multiple rows of flex-items.
+
+![CSS-Flexbox-img-52]
+![CSS-Flexbox-img-53]
+
+#### Guidance
+
+__Flex-Wrap Guidance__ (not often required)
+
+- Wrapping is useful for simple linear layouts when elements need to wrap onto
+  multiple lines.
+
+Summary card for this section can be found on page 26 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+## 📺 Topic 7: CSS Grid
+
+### Introduction to CSS Grid
+
+___CSS Grid___ is a two-dimensional layout model making it simple to arrange items
+in rows and columns.
+
+### Terminology
+
+CSS Grid has two main components
+
+![CSS-Grid-Terminology-img-1]
+
 ## Resources
 
 - [CSS in 5 minutes](https://www.youtube.com/watch?v=Z4pCqK-V_Wo)
@@ -1425,11 +1525,28 @@ Summary card for this section can be found on page 24 [⇲](<./assets/CSS Summar
 [CSS-Flexbox-img-38]: <./assets/CSS-Flexbox-img-38.png>
 [CSS-Flexbox-img-39]: <./assets/CSS-Flexbox-img-39.png>
 [CSS-Flexbox-img-40]: <./assets/CSS-Flexbox-img-40.png>
+[CSS-Flexbox-img-41]: <./assets/CSS-Flexbox-img-41.png>
+[CSS-Flexbox-img-42]: <./assets/CSS-Flexbox-img-42.png>
+[CSS-Flexbox-img-43]: <./assets/CSS-Flexbox-img-43.png>
+[CSS-Flexbox-img-44]: <./assets/CSS-Flexbox-img-44.png>
+[CSS-Flexbox-img-45]: <./assets/CSS-Flexbox-img-45.png>
+[CSS-Flexbox-img-46]: <./assets/CSS-Flexbox-img-46.png>
+[CSS-Flexbox-img-47]: <./assets/CSS-Flexbox-img-47.png>
+[CSS-Flexbox-img-48]: <./assets/CSS-Flexbox-img-48.png>
+[CSS-Flexbox-img-49]: <./assets/CSS-Flexbox-img-49.png>
+[CSS-Flexbox-img-50]: <./assets/CSS-Flexbox-img-50.png>
+[CSS-Flexbox-img-51]: <./assets/CSS-Flexbox-img-51.png>
+[CSS-Flexbox-img-52]: <./assets/CSS-Flexbox-img-52.png>
+[CSS-Flexbox-img-53]: <./assets/CSS-Flexbox-img-53.png>
+<!--endregion-->
+
+<!--region: CSS Grid-->
+[CSS-Grid-Terminology-img-1]: <./assets/CSS-Grid-Terminology-img-1.png>
 <!--endregion-->
 
 <!--
 
-Summary card for this section can be found on page 24 [⇲](<./assets/CSS Summary Cards.pdf>)
+Summary card for this section can be found on page 25 [⇲](<./assets/CSS Summary Cards.pdf>)
 
 🚀 [Back to top](#top)
 
