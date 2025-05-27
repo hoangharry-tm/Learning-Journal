@@ -52,6 +52,11 @@ _Table of Contents:_
   - [Flex Wrap & Align Content](#flex-wrap--align-content)
 - [📺 Topic 7: CSS Grid](#-topic-7-css-grid)
   - [Introduction to CSS Grid](#introduction-to-css-grid)
+  - [Grid Columns & Rows](#grid-columns--rows)
+  - [Grid Gap](#grid-gap)
+  - [Grid _Cell_ Alignment](#grid-cell-alignment)
+  - [Grid _Container_ Alignment](#grid-container-alignment)
+  - [Grid Items](#grid-items)
 
 ## ✍🏻 Topic 1: CSS Text
 
@@ -1435,11 +1440,238 @@ Summary card for this section can be found on page 26 [⇲](<./assets/CSS Summar
 ___CSS Grid___ is a two-dimensional layout model making it simple to arrange items
 in rows and columns.
 
-### Terminology
+#### Terminology
 
-CSS Grid has two main components
+CSS Grid has two main components:
+
+- Grid Container
+- Grid Items
 
 ![CSS-Grid-Terminology-img-1]
+
+CSS Grid has two axis (can't change direction of the axis) and the grid is
+divided into grid cells by grid lines.
+
+![CSS-Grid-Terminology-img-2]
+
+Grid lines define grid tracks (i.e. rows & columns).
+Grid rows and columns can have spacing between them.
+
+![CSS-Grid-Terminology-img-3]
+
+#### Display Grid
+
+The display property on a container element will activate grid layout features on
+children elements.
+
+```css
+display: grid;
+```
+
+#### CSS Grid Guidance
+
+- CSS Grid can be used for complex 2D layouts
+  ![CSS-Grid-Guidance-img-1]
+- Grid is also commonly used for major sections
+- Grid is also commonly used for UI element with consistent spacing in a 1D row
+  or column
+  ![CSS-Grid-Guidance-img-2]
+
+#### CSS Grid vs. Flexbox
+
+![CSS-Grid-Comparison-img-1]
+
+Summary card for this section can be found on page 28 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### Grid Columns & Rows
+
+Grid items will appear in a single column by default.
+
+![CSS-Grid-Columns-Rows-img-1]
+
+#### Grid Template Columns
+
+(It) sets the number of columns and width of each.
+
+```css
+//                      ↱ width ↰
+grid-template-columns: 100px 200px;
+//              column-1 ↲     ↳ column-2
+```
+
+#### Grid Template Rows
+
+(It) sets the number of rows and height of each.
+
+![CSS-Grid-Columns-Rows-img-2]
+
+#### Fractional Unit
+
+_(It's very commonly used in CSS Grid)_
+
+The fraction of available space in the grid container.
+
+![CSS-Grid-Columns-Rows-img-3]
+
+__Fractional Unit and Rows__
+
+ If height is set on a grid container, `fr` units proportionally distribute space
+ to the grid items.
+
+![CSS-Grid-Columns-Rows-img-4]
+![CSS-Grid-Columns-Rows-img-5]
+
+#### Repeat Function
+
+Used to repeat rows or columns dimensions when they are recurring.
+
+```css
+grid-template-columns: repeat(4, 1fr);
+
+// The upper code will be translated into
+
+grid-template-columns: 1fr 1fr 1fr 1fr;
+
+```
+
+#### Column and Row Guidance
+
+- Columns are often set with `fr` units and the width of grid container is usually
+  not set but extends width of the page.
+- The number of rows are not usually set but are automatically defined by the number
+  of grid items.
+- The height of the grid container is not usually set but defined by the sum of the
+  height of the grid items.
+
+![CSS-Grid-Columns-Rows-img-6]
+
+Summary card for this section can be found on page 28 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### Grid Gap
+
+By default, grid items are placed next to each other with no spacing between them.
+
+#### Gap Property
+
+The `gap` property creates space between grid rows and columns.
+
+![CSS-Grid-Gap-img-1]
+![CSS-Grid-Gap-img-2]
+
+#### Gap Guidance
+
+- Commonly used to space grid items in major sections
+- Commonly used for spacing in card layouts such as testimonials and features
+
+Summary card for this section can be found on page 28 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### Grid _Cell_ Alignment
+
+Grid items can be aligned inside grid cells _if_ there is space available.
+
+#### Justify Items
+
+___(Not `justify-content`)___
+
+![CSS-Grid-Gap-img-3]
+
+#### Align Items
+
+_(Same as flexbox)_
+
+(It) aligns grid items inside a grid cell along the column axis.
+
+![CSS-Grid-Gap-img-4]
+
+#### Alignment Guidance
+
+- It is common to use grid alignment properties when one grid item is larger than
+  another.
+  ![CSS-Grid-Gap-img-5]
+- It is common to use grid and flexbox in parallel to achieve more precise control
+  of layout.
+  ![CSS-Grid-Gap-img-6]
+
+Summary card for this section can be found on page 29 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### Grid _Container_ Alignment
+
+Entire grid tracks can be aligned and distributed when there is extra space in the
+grid container.
+
+![CSS-Grid-Container-Alignment-img-1]
+
+#### Justify Content
+
+_(Same as flexbox)_
+![CSS-Grid-Container-Alignment-img-2]
+
+#### Align Content
+
+_(Same as flexbox)_
+![CSS-Grid-Container-Alignment-img-3]
+
+#### Items vs. Content
+
+![CSS-Grid-Container-Alignment-img-4]
+
+Summary card for this section can be found on page 30 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### Grid Items
+
+#### Placing Grid Items
+
+Grid items are automatically placed in a grid based on the order they appear in
+the html.
+
+![CSS-Grid-Items-img-1]
+
+Grid items can be moved to different cells.
+
+![CSS-Grid-Items-img-2]
+![CSS-Grid-Items-img-3]
+![CSS-Grid-Items-img-4]
+
+#### Placing Grid Items Guidance
+
+Placing grid items is used to achieve _specific_ layouts.
+![CSS-Grid-Items-img-5]
+
+#### Spanning Grid Cells
+
+`grid-row` and `grid-column` can be used to have grid items span multiple rows or
+columns.
+
+![CSS-Grid-Items-img-6]
+![CSS-Grid-Items-img-7]
+
+#### Spanning Grid Cells Guidance
+
+Grid cells can be spanned to create visually interesting designs.
+
+![CSS-Grid-Items-img-8]
+
+#### Aligning Grid Items
+
+_(Not too common)_
+
+Grid cell alignment can be overridden for individual items
+
+![CSS-Grid-Items-img-9]
+
+Summary card for this section can be found on page 31 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
 
 ## Resources
 
@@ -1542,11 +1774,48 @@ CSS Grid has two main components
 
 <!--region: CSS Grid-->
 [CSS-Grid-Terminology-img-1]: <./assets/CSS-Grid-Terminology-img-1.png>
+[CSS-Grid-Terminology-img-2]: <./assets/CSS-Grid-Terminology-img-2.png>
+[CSS-Grid-Terminology-img-3]: <./assets/CSS-Grid-Terminology-img-3.png>
+
+[CSS-Grid-Guidance-img-1]: <./assets/CSS-Grid-Guidance-img-1.png>
+[CSS-Grid-Guidance-img-2]: <./assets/CSS-Grid-Guidance-img-2.png>
+
+[CSS-Grid-Comparison-img-1]: <./assets/CSS-Grid-Comparison-img-1.png>
+
+[CSS-Grid-Columns-Rows-img-1]: <./assets/CSS-Grid-Columns-Rows-img-1.png>
+[CSS-Grid-Columns-Rows-img-2]: <./assets/CSS-Grid-Columns-Rows-img-2.png>
+[CSS-Grid-Columns-Rows-img-3]: <./assets/CSS-Grid-Columns-Rows-img-3.png>
+[CSS-Grid-Columns-Rows-img-4]: <./assets/CSS-Grid-Columns-Rows-img-4.png>
+[CSS-Grid-Columns-Rows-img-5]: <./assets/CSS-Grid-Columns-Rows-img-5.png>
+[CSS-Grid-Columns-Rows-img-6]: <./assets/CSS-Grid-Columns-Rows-img-6.png>
+
+[CSS-Grid-Gap-img-1]: <./assets/CSS-Grid-Gap-img-1.png>
+[CSS-Grid-Gap-img-2]: <./assets/CSS-Grid-Gap-img-2.png>
+[CSS-Grid-Gap-img-3]: <./assets/CSS-Grid-Gap-img-3.png>
+[CSS-Grid-Gap-img-4]: <./assets/CSS-Grid-Gap-img-4.png>
+[CSS-Grid-Gap-img-5]: <./assets/CSS-Grid-Gap-img-5.png>
+[CSS-Grid-Gap-img-6]: <./assets/CSS-Grid-Gap-img-6.png>
+
+[CSS-Grid-Container-Alignment-img-1]: <./assets/CSS-Grid-Container-Alignment-img-1.png>
+[CSS-Grid-Container-Alignment-img-2]: <./assets/CSS-Grid-Container-Alignment-img-2.png>
+[CSS-Grid-Container-Alignment-img-3]: <./assets/CSS-Grid-Container-Alignment-img-3.png>
+[CSS-Grid-Container-Alignment-img-4]: <./assets/CSS-Grid-Container-Alignment-img-4.png>
+
+[CSS-Grid-Items-img-1]: <./assets/CSS-Grid-Items-img-1.png>
+[CSS-Grid-Items-img-2]: <./assets/CSS-Grid-Items-img-2.png>
+[CSS-Grid-Items-img-3]: <./assets/CSS-Grid-Items-img-3.png>
+[CSS-Grid-Items-img-4]: <./assets/CSS-Grid-Items-img-4.png>
+[CSS-Grid-Items-img-5]: <./assets/CSS-Grid-Items-img-5.png>
+[CSS-Grid-Items-img-6]: <./assets/CSS-Grid-Items-img-6.png>
+[CSS-Grid-Items-img-7]: <./assets/CSS-Grid-Items-img-7.png>
+[CSS-Grid-Items-img-8]: <./assets/CSS-Grid-Items-img-8.png>
+[CSS-Grid-Items-img-9]: <./assets/CSS-Grid-Items-img-9.png>
+
 <!--endregion-->
 
 <!--
 
-Summary card for this section can be found on page 25 [⇲](<./assets/CSS Summary Cards.pdf>)
+Summary card for this section can be found on page 31 [⇲](<./assets/CSS Summary Cards.pdf>)
 
 🚀 [Back to top](#top)
 
