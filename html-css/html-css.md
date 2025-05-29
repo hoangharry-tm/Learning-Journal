@@ -57,6 +57,10 @@ _Table of Contents:_
   - [Grid _Cell_ Alignment](#grid-cell-alignment)
   - [Grid _Container_ Alignment](#grid-container-alignment)
   - [Grid Items](#grid-items)
+- [👟 Topic 8: Responsive Design](#-topic-8-responsive-design)
+  - [Media Queries](#media-queries)
+  - [Relative Units](#relative-units)
+  - [Breakpoints](#breakpoints)
 
 ## ✍🏻 Topic 1: CSS Text
 
@@ -1673,6 +1677,114 @@ Summary card for this section can be found on page 31 [⇲](<./assets/CSS Summar
 
 🚀 [Back to top](#top)
 
+## 👟 Topic 8: Responsive Design
+
+Responsive design is powered by three main pillars
+
+1. Relative Units
+2. Fluid Layouts
+3. Media Queries
+
+### Media Queries
+
+![CSS-Responsive-Media-Queries-img-1]
+
+### Relative Units
+
+#### Rems Inside `@media` Query Conditions
+
+The `rem` value inside a media query condition is always based on the default
+browser font size. That means even if we adjust the _browser font-size_ to `10px`
+for easier calculation, the condition inside the media query still use `rem` based
+on the default `16px`.
+
+```css
+:root {
+  font-size: 10px; // Set the default font-size to 10px
+}
+
+h1 {
+  font-size: 80rem; // 80% x 10px = 8px
+}
+
+@media (max-width: 31.25rem) { // 31.25% x 16px (not 10px)
+  // ...
+}
+```
+
+#### Rems Inside `@media` Query
+
+Rem values scale proportionally, adjusting both existing and new values based on
+the updated root font size.
+
+![CSS-Responsive-Media-Queries-img-2]
+
+When adding new rem values inside a media query select values you would use for
+the base case and it will scale automatically.
+
+![CSS-Responsive-Media-Queries-img-3]
+
+#### Fluid Layouts
+
+Using flexbox & CSS grid allow layouts to dynamically adjust in size and position
+easily.
+
+![CSS-Responsive-Media-Queries-img-4]
+
+Summary card for this section can be found on page 33 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### Breakpoints
+
+__What are breakpoints?__
+
+A specific screen width where a webpage's layout changes.
+
+#### Selecting Breakpoints
+
+Selecting a breakpoints for specific devices is impractical as there are too many to cater for. E.g.,
+
+- Mobile
+- Tablet
+- Laptop
+- Desktop
+
+So knowing the ranges of common device screen sizes is helpful in thinking about
+breakpoints.
+
+![CSS-Responsive-Breakpoints-img-1]
+
+Ultimately, selecting breakpoints should be design-led & determined by observing
+where the layout naturally 'breaks'.
+
+When using `max-width` in media queries, there's no need to set a maximum range
+because styles will be applied automatically.
+
+![CSS-Responsive-Breakpoints-img-2]
+
+Summary card for this section can be found on page 33 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### CSS & Physical Pixels
+
+_Physical Pixels_
+
+A pixel does not have a fixed length and varies between screens.
+
+![CSS-Responsive-Pixels-img-1]
+
+_CSS Pixels_
+
+A CSS pixel has a length of `1/96 inch`
+
+![CSS-Responsive-Pixels-img-2]
+
+Summary card for this section can be found on page 33 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
 ## Resources
 
 - [CSS in 5 minutes](https://www.youtube.com/watch?v=Z4pCqK-V_Wo)
@@ -1810,12 +1922,24 @@ Summary card for this section can be found on page 31 [⇲](<./assets/CSS Summar
 [CSS-Grid-Items-img-7]: <./assets/CSS-Grid-Items-img-7.png>
 [CSS-Grid-Items-img-8]: <./assets/CSS-Grid-Items-img-8.png>
 [CSS-Grid-Items-img-9]: <./assets/CSS-Grid-Items-img-9.png>
+<!--endregion-->
 
+<!--region: Responsive Desgin-->
+[CSS-Responsive-Media-Queries-img-1]: <./assets/CSS-Responsive-Media-Queries-img-1.png>
+[CSS-Responsive-Media-Queries-img-2]: <./assets/CSS-Responsive-Media-Queries-img-2.png>
+[CSS-Responsive-Media-Queries-img-3]: <./assets/CSS-Responsive-Media-Queries-img-3.png>
+[CSS-Responsive-Media-Queries-img-4]: <./assets/CSS-Responsive-Media-Queries-img-4.png>
+
+[CSS-Responsive-Breakpoints-img-1]: <./assets/CSS-Responsive-Breakpoints-img-1.png>
+[CSS-Responsive-Breakpoints-img-2]: <./assets/CSS-Responsive-Breakpoints-img-2.png>
+
+[CSS-Responsive-Pixels-img-1]: <./assets/CSS-Responsive-Pixels-img-1.png>
+[CSS-Responsive-Pixels-img-2]: <./assets/CSS-Responsive-Pixels-img-2.png>
 <!--endregion-->
 
 <!--
 
-Summary card for this section can be found on page 31 [⇲](<./assets/CSS Summary Cards.pdf>)
+Summary card for this section can be found on page 33 [⇲](<./assets/CSS Summary Cards.pdf>)
 
 🚀 [Back to top](#top)
 
