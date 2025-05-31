@@ -61,6 +61,19 @@ _Table of Contents:_
   - [Media Queries](#media-queries)
   - [Relative Units](#relative-units)
   - [Breakpoints](#breakpoints)
+- [🍓 Topic 9: Positioning](#-topic-9-positioning)
+  - [`position` Property](#position-property)
+  - [Static Positioning](#static-positioning)
+  - [Absolute Positioning](#absolute-positioning)
+  - [Fixed & Sticky Positioning](#fixed--sticky-positioning)
+  - [Positioning Guidance](#positioning-guidance)
+  - [Z-index & Stacking Context](#z-index--stacking-context)
+  - [Transform](#transform)
+- [✍🏻 Topic 10: Shadows & Transitions](#-topic-10-shadows--transitions)
+  - [Shadow Property](#shadow-property)
+  - [Shadow Guidance](#shadow-guidance)
+  - [Flat Design vs. Shadows](#flat-design-vs-shadows)
+  - [Transitions](#transitions)
 
 ## ✍🏻 Topic 1: CSS Text
 
@@ -1785,6 +1798,200 @@ Summary card for this section can be found on page 33 [⇲](<./assets/CSS Summar
 
 🚀 [Back to top](#top)
 
+## 🍓 Topic 9: Positioning
+
+__Normal Flow__
+
+Elements occupy their own designated 'slot' on the page which allows them to be
+surrounded by other elements.
+
+![CSS-Positioning-img-1]
+
+### `position` Property
+
+Determines how an element is positioned on the page.
+
+![CSS-Positioning-img-2]
+
+### Static Positioning
+
+The element follows the normal document flow.
+
+```css
+position: static; // Default
+```
+
+### Relative Positioning
+
+The element follows the normal document flow but can be offset relative to itself.
+
+```css
+position: relative;
+```
+
+![CSS-Positioning-img-3]
+![CSS-Positioning-img-4]
+
+_Offset Properties_ are used to shift element from its reference point.
+
+![CSS-Positioning-img-5]
+
+### Absolute Positioning
+
+The element is removed from the normal document flow.
+
+![CSS-Positioning-img-6]
+![CSS-Positioning-img-7]
+
+When positioning an absolute positioned element, the reference point is the root
+HTML element.
+
+![CSS-Positioning-img-8]
+
+### Fixed & Sticky Positioning
+
+![CSS-Positioning-img-9]
+
+### Positioning Guidance
+
+- `absolute` positioning is more commonly used than `relative` because it removes
+  elements from the document flow.
+  ![CSS-Positioning-img-10]
+- `absolute` positioning should be used as a last resort for very specific cases
+  as it makes responsive design more challenging.
+  ![CSS-Positioning-img-11]
+- `fixed` positioning is used for elements that need to be absolute positioned but
+  also need to remain visible when the user scroll (e.g. the chatbot box).
+  ![CSS-Positioning-img-12]
+- `sticky` positioning is ideal for navbars, as they stay at the top in normal
+  flow and then become fixed when the user scrolls.
+  ![CSS-Positioning-img-13]
+
+Summary card for this section can be found on page 35 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### Z-index & Stacking Context
+
+#### Z-index
+
+The z-index property controls the vertical stacking order of positioned elements.
+
+![CSS-Z-Index-img-1]
+![CSS-Z-Index-img-2]
+
+#### Stacking Context
+
+A positioned element with z-index creates a new stacking context, where its children
+are stacked independently of other elements.
+
+![CSS-Z-Index-img-3]
+
+Summary card for this section can be found on page 36 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### Transform
+
+Applies visual transformations to an element like scaling, rotating, translating
+and skewing.
+
+![CSS-Transform-img-1]
+
+__Transformation Functions__
+
+![CSS-Transform-img-2]
+
+#### Positioned Elements and Translate
+
+Using positioning and translate together provides precise control over element
+placement.
+
+![CSS-Transform-img-3]
+
+#### Transform Guidance
+
+- Scale is often used when hovering over an image to create a dynamic visual
+  effect.
+  ![CSS-Transform-img-4]
+- Translate is used on positioned modals to achieve precise centering within their
+  containers.
+  ![CSS-Transform-img-5]
+- Translate is used on positioned alerts to achive precise alignment in top
+  right corner.
+  ![CSS-Transform-img-6]
+
+Summary card for this section can be found on page 36 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+## ✍🏻 Topic 10: Shadows & Transitions
+
+__How shadows work__
+
+Moving light in the same plane as the table moves the shadow horizontally and
+vertically on the floor.
+
+![CSS-Shadows-img-1]
+
+Moving light up and down creates a blur resulting in edges that appear _soft_ or
+_sharp_
+
+![CSS-Shadows-img-2]
+
+### Shadow Property
+
+![CSS-Shadows-img-3]
+![CSS-Shadows-img-4]
+
+### Shadow Guidance
+
+- Shadows can be used to add depth and dimension to a design to create separation
+  between UI elements.
+- Shadows should be light, as darker shadows can create a harsh and unnatural
+  apprearance in the design.
+- Smaller shadows are ideal for enhancing smaller components like buttons and
+  cards which add subtle depth.
+- Medium-sized shadows can be used for larger components, helping them stand out.
+- Large shadows are used when an element should appear to be floating above the rest of the design.
+
+### Flat Design vs. Shadows
+
+- Flat design uses borders and background colors to achieve separation instead of
+  shadows.
+- Shadows should not be used too often, as overuse can make a design look cluttered
+  and overwhelming.
+
+Summary card for this section can be found on page 38 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
+### Transitions
+
+When an element moves between states, the changes occur immediately. Transitions
+are used to create a smooth, gradual change to an elements properties when it
+undergoes a state change.
+
+![CSS-Transitions-img-1]
+
+The `transition` property should be defined on initial state.
+
+![CSS-Transitions-img-2]
+
+#### Timing Functions
+
+Controls the speed of the animation.
+
+![CSS-Transitions-img-3]
+
+#### Transitions Guidance
+
+Transitions can make card components 'pop'.
+
+Summary card for this section can be found on page 38 [⇲](<./assets/CSS Summary Cards.pdf>)
+
+🚀 [Back to top](#top)
+
 ## Resources
 
 - [CSS in 5 minutes](https://www.youtube.com/watch?v=Z4pCqK-V_Wo)
@@ -1937,9 +2144,51 @@ Summary card for this section can be found on page 33 [⇲](<./assets/CSS Summar
 [CSS-Responsive-Pixels-img-2]: <./assets/CSS-Responsive-Pixels-img-2.png>
 <!--endregion-->
 
+<!--region: Positioning-->
+[CSS-Positioning-img-1]: <./assets/CSS-Positioning-img-1.png>
+[CSS-Positioning-img-2]: <./assets/CSS-Positioning-img-2.png>
+[CSS-Positioning-img-3]: <./assets/CSS-Positioning-img-3.png>
+[CSS-Positioning-img-4]: <./assets/CSS-Positioning-img-4.png>
+[CSS-Positioning-img-5]: <./assets/CSS-Positioning-img-5.png>
+[CSS-Positioning-img-6]: <./assets/CSS-Positioning-img-6.png>
+[CSS-Positioning-img-7]: <./assets/CSS-Positioning-img-7.png>
+[CSS-Positioning-img-8]: <./assets/CSS-Positioning-img-8.png>
+[CSS-Positioning-img-9]: <./assets/CSS-Positioning-img-9.png>
+[CSS-Positioning-img-10]: <./assets/CSS-Positioning-img-10.png>
+[CSS-Positioning-img-11]: <./assets/CSS-Positioning-img-11.png>
+[CSS-Positioning-img-12]: <./assets/CSS-Positioning-img-12.png>
+[CSS-Positioning-img-13]: <./assets/CSS-Positioning-img-13.png>
+<!--endregion-->
+
+<!--region: z-index & stacking context-->
+[CSS-Z-Index-img-1]: <./assets/CSS-Z-Index-img-1.png>
+[CSS-Z-Index-img-2]: <./assets/CSS-Z-Index-img-2.png>
+[CSS-Z-Index-img-3]: <./assets/CSS-Z-Index-img-3.png>
+<!--endregion-->
+
+<!--region: transform-->
+[CSS-Transform-img-1]: <./assets/CSS-Transform-img-1.png>
+[CSS-Transform-img-2]: <./assets/CSS-Transform-img-2.png>
+[CSS-Transform-img-3]: <./assets/CSS-Transform-img-3.png>
+[CSS-Transform-img-4]: <./assets/CSS-Transform-img-4.png>
+[CSS-Transform-img-5]: <./assets/CSS-Transform-img-5.png>
+[CSS-Transform-img-6]: <./assets/CSS-Transform-img-6.png>
+<!--endregion-->
+
+<!--region: Shadows & Transitions-->
+[CSS-Shadows-img-1]: <./assets/CSS-Shadows-img-1.png>
+[CSS-Shadows-img-2]: <./assets/CSS-Shadows-img-2.png>
+[CSS-Shadows-img-3]: <./assets/CSS-Shadows-img-3.png>
+[CSS-Shadows-img-4]: <./assets/CSS-Shadows-img-4.png>
+
+[CSS-Transitions-img-1]: <./assets/CSS-Transitions-img-1.png>
+[CSS-Transitions-img-2]: <./assets/CSS-Transitions-img-2.png>
+[CSS-Transitions-img-3]: <./assets/CSS-Transitions-img-3.png>
+<!--endregion-->
+
 <!--
 
-Summary card for this section can be found on page 33 [⇲](<./assets/CSS Summary Cards.pdf>)
+Summary card for this section can be found on page 38 [⇲](<./assets/CSS Summary Cards.pdf>)
 
 🚀 [Back to top](#top)
 
